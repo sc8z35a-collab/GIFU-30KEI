@@ -1,0 +1,75 @@
+{
+  "checkedOn": "2026-10-07",
+  "originName": "原駅（名古屋市営地下鉄鶴舞線、愛知県名古屋市天白区）",
+  "currentCoordinates": {
+    "lat": 35.126118,
+    "lon": 136.996714
+  },
+  "requiresCorrection": false,
+  "conclusion": "現在の座標は原駅の地上出入口1・2の間にある駅前道路上。自動車の距離・燃料予算計算の道路側出発点として妥当であり、修正は不要。地下駅の代表点そのものではない。",
+  "primaryEvidence": {
+    "publisher": "名古屋市交通局",
+    "url": "https://www.kotsu.city.nagoya.jp/rp/reader/trp0001146.htm",
+    "facts": [
+      "原駅のホームは地下2階。",
+      "地上の通常出入口は2か所、エレベーター出入口は1か所。",
+      "ホームは植原橋東交差点から東へ延び、南側に市バスターミナルがある。"
+    ],
+    "coordinatePrecision": "この一次資料に緯度経度は記載されていない。位置の数値と道路との距離は OpenStreetMap の現在のジオメトリから算出。"
+  },
+  "osmEvidence": {
+    "apiUrl": "https://api.openstreetmap.org/api/0.6/map?bbox=136.9950,35.1250,136.9983,35.1270",
+    "station": {
+      "lat": 35.1259902,
+      "lon": 136.9971239,
+      "osmNode": 5408531523,
+      "source": "https://www.openstreetmap.org/node/5408531523",
+      "distanceFromCurrentOriginMeters": 39.9
+    },
+    "groundEntrances": [
+      {
+        "name": "1",
+        "lat": 35.1261239,
+        "lon": 136.9970226,
+        "osmNode": 13346951096,
+        "distanceFromCurrentOriginMeters": 28.1,
+        "source": "https://www.openstreetmap.org/node/13346951096"
+      },
+      {
+        "name": "2",
+        "lat": 35.1260797,
+        "lon": 136.9960562,
+        "osmNode": 13346964714,
+        "distanceFromCurrentOriginMeters": 60.0,
+        "source": "https://www.openstreetmap.org/node/13346964714"
+      }
+    ],
+    "road": {
+      "osmWay": 318665774,
+      "highway": "tertiary",
+      "source": "https://www.openstreetmap.org/way/318665774",
+      "segmentStart": {
+        "lat": 35.1262563,
+        "lon": 136.9963098
+      },
+      "segmentEnd": {
+        "lat": 35.12587,
+        "lon": 136.9974838
+      },
+      "nearestPoint": {
+        "lat": 35.1261226,
+        "lon": 136.9967162
+      },
+      "distanceFromCurrentOriginMeters": 0.5
+    },
+    "mapUrl": "https://www.openstreetmap.org/?mlat=35.126118&mlon=136.996714#map=19/35.126118/136.996714"
+  },
+  "recommendedCoordinates": {
+    "lat": 35.126118,
+    "lon": 136.996714
+  },
+  "basis": "OSM の駅代表点まで約40 m、1番出入口まで約28 m、2番出入口まで約60 m。地上道路318665774の中心線から約1 m未満で、駅前道路上の出発点と判断できる。",
+  "modifiedFiles": [
+    "research/hara-origin.json"
+  ]
+}

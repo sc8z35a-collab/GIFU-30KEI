@@ -1,0 +1,8 @@
+node_modules/
+.sites-runtime/
+.sites-checkout*/
+research/routes/
+research/photo-contact-sheet.jpg
+research/photo-commons-metadata.json
+research/photo-catalog.json
+research/photo-download-status.json

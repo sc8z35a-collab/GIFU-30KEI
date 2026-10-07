@@ -28,16 +28,16 @@ export const PHOTOS = {
   },
   "tomida": {
     "title": "富田の農村景観",
-    "caption": "富田の田園と周囲の山並み",
-    "focal": "50% 57%",
-    "focalWide": "50% 55%",
+    "caption": "富田の里道と田畑",
+    "focal": "40% 57%",
+    "focalWide": "45% 56%",
     "author": "torao t",
     "license": "CC BY 3.0",
     "license_url": "https://creativecommons.org/licenses/by/3.0",
-    "source_url": "https://commons.wikimedia.org/wiki/File:%E8%BE%B2%E6%9D%91%E6%99%AF%E8%A6%B3%E6%97%A5%E6%9C%AC%E4%B8%80%E3%81%AE%E5%9C%B0_-_panoramio_-_torao_t.jpg",
+    "source_url": "https://commons.wikimedia.org/wiki/File:%E5%AF%8C%E7%94%B0_-_panoramio.jpg",
     "date_taken": "Taken on 17 December 2009",
     "provider": "Wikimedia Commons",
-    "original_description": "農村景観日本一の地",
+    "original_title": "富田 - panoramio",
     "path": "./assets/tomida.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -52,7 +52,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:%E8%BE%B2%E6%9D%91%E6%99%AF%E8%A6%B3%E6%97%A5%E6%9C%AC%E4%B8%80_%E5%B1%95%E6%9C%9B%E5%8F%B0%E3%81%8B%E3%82%89_(%E5%B2%90%E9%98%9C%E7%9C%8C%E6%81%B5%E9%82%A3%E5%B8%82%E5%B2%A9%E6%9D%91%E7%94%BA)_-_panoramio.jpg",
     "date_taken": "Taken on 5 July 2009",
     "provider": "Wikimedia Commons",
-    "original_description": "農村景観日本一　展望台から (岐阜県恵那市岩村町)",
+    "original_title": "農村景観日本一 展望台から (岐阜県恵那市岩村町) - panoramio",
     "path": "./assets/tomida-02.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -67,7 +67,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Kuronotahigashi_Wetland_(2026-07-30).jpg",
     "date_taken": "Taken on 30 July 2026, 11:39:10",
     "provider": "Wikimedia Commons",
-    "original_description": "Kuronotahigashi Wetland in Mount Byobu, Mizunami, Gifu Prefecture, Japan.",
+    "original_title": "Kuronotahigashi Wetland (2026-07-30)",
     "path": "./assets/kuronota.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -82,7 +82,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Kuronotahigashi_Wetland_(2026-08-14).jpg",
     "date_taken": "Taken on 14 August 2026, 08:01:36",
     "provider": "Wikimedia Commons",
-    "original_description": "Kuronotahigashi Wetland, Mount Byobu, Mizunami, Gifu Prefecture, Japan.",
+    "original_title": "Kuronotahigashi Wetland (2026-08-14)",
     "path": "./assets/kuronota-02.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -97,7 +97,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Amo_Wetland_2023-07-22.jpg",
     "date_taken": "Taken on 22 July 2023, 14:12:17",
     "provider": "Wikimedia Commons",
-    "original_description": "Amo Wetland in Hida, Gifu Prefecture, Japan.",
+    "original_title": "Amo Wetland 2023-07-22",
     "path": "./assets/amou.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -112,7 +112,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Amo_Wetland_2014-09-20.jpg",
     "date_taken": "Taken on 20 September 2014, 12:01:49",
     "provider": "Wikimedia Commons",
-    "original_description": "Amo Wetland in Hida, Gifu Prefecture, Japan.",
+    "original_title": "Amo Wetland 2014-09-20",
     "path": "./assets/amou-02.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -130,7 +130,7 @@ export const PHOTOS = {
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
   "tanekura-02": {
-    "title": "種蔵の棚田",
+    "title": "種蔵集落",
     "source_url": "https://openphoto.app/c/hidacity/photo/19695",
     "author": "飛騨市",
     "license": "CC BY 4.0",
@@ -153,7 +153,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Kaore_keikoku.JPG",
     "date_taken": "2012-07-08 11:19:25",
     "provider": "Wikimedia Commons",
-    "original_description": "川浦（かおれ）渓谷。関市板取",
+    "original_title": "Kaore keikoku",
     "path": "./assets/kaore.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -168,7 +168,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Ikegahara_Marsh.jpg",
     "date_taken": "Taken on 13 September 2024, 08:04:43",
     "provider": "Wikimedia Commons",
-    "original_description": "Ikegahara Marsh in Hida, Gifu Prefectures, Japan.",
+    "original_title": "Ikegahara Marsh",
     "path": "./assets/ikegahara.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -183,7 +183,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Mt.Ena_from_Nenoue_highland,Nakatsugawa.jpg",
     "date_taken": "2015-05-05 16:55:49",
     "provider": "Wikimedia Commons",
-    "original_description": "根の上高原より撮影した恵那山。",
+    "original_title": "Mt.Ena from Nenoue highland,Nakatsugawa",
     "path": "./assets/nenoue.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -198,7 +198,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Juro_Falls_2026-07-30.jpg",
     "date_taken": "Taken on 30 July 2026, 10:24:45",
     "provider": "Wikimedia Commons",
-    "original_description": "Juro Falls in Ena, Gifu Prefecture, Japan.",
+    "original_title": "Juro Falls 2026-07-30",
     "path": "./assets/juro.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -213,7 +213,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:%E3%81%9B%E3%81%9B%E3%82%89%E3%81%8E%E8%A1%97%E9%81%93%E3%81%AE%E5%B3%A0_-_panoramio.jpg",
     "date_taken": "Taken on 26 October 2014",
     "provider": "Wikimedia Commons",
-    "original_description": "せせらぎ街道の峠",
+    "original_title": "せせらぎ街道の峠 - panoramio",
     "path": "./assets/nishiure.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -228,7 +228,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Nishiure_Pass.jpg",
     "date_taken": "Taken on 26 February 2019, 14:38:17",
     "provider": "Wikimedia Commons",
-    "original_description": "Nishiure Pass on Gifu Prefectural Road Route 73 in Takayama, Gifu Prefecture, Japan.",
+    "original_title": "Nishiure Pass",
     "path": "./assets/nishiure-02.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -243,7 +243,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Old_countryside_house_in_Gifu_Prefecture.jpg",
     "date_taken": "2006-08-20 16:14:38",
     "provider": "Wikimedia Commons",
-    "original_description": "Old countryside house in northernmost Gifu Prefecture, Japan. The Northern Alps (Hida mountains) of Japan are towering in the back of the picture.",
+    "original_title": "Old countryside house in Gifu Prefecture",
     "path": "./assets/yamanomura.webp",
     "changes": "Commons収録時の明度調整：Paracel63。縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -257,9 +257,9 @@ export const PHOTOS = {
     "license": "CC BY 4.0",
     "license_url": "https://creativecommons.org/licenses/by/4.0",
     "source_url": "https://commons.wikimedia.org/wiki/File:Gifu_Utsue_48_Waterfalls_xl.jpg",
-    "date_taken": "Unknown date",
+    "date_taken": "",
     "provider": "Wikimedia Commons",
-    "original_description": "岐阜県 宇津江四十八滝、函滝",
+    "original_title": "Gifu Utsue 48 Waterfalls xl",
     "path": "./assets/utsue.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -274,7 +274,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Takanemachi_Hiwada,_Takayama,_Gifu_Prefecture_509-3403,_Japan_-_panoramio_(2).jpg",
     "date_taken": "Taken on 16 June 2013",
     "provider": "Wikimedia Commons",
-    "original_description": "御嶽山の継子岳を北麓から",
+    "original_title": "Takanemachi Hiwada, Takayama, Gifu Prefecture 509-3403, Japan - panoramio (2)",
     "path": "./assets/hiwada.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -289,7 +289,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Takanemachi_Hiwada,_Takayama,_Gifu_Prefecture_509-3403,_Japan_-_panoramio.jpg",
     "date_taken": "Taken on 14 April 2013",
     "provider": "Wikimedia Commons",
-    "original_description": "Takanemachi Hiwada, Takayama, Gifu Prefecture 509-3403, Japan",
+    "original_title": "Takanemachi Hiwada, Takayama, Gifu Prefecture 509-3403, Japan - panoramio",
     "path": "./assets/hiwada-02.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -304,7 +304,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Tokuyama_Dam_from_Mount_Hanabusa.jpg",
     "date_taken": "2012-11-25 12:04:41",
     "provider": "Wikimedia Commons",
-    "original_description": "Tokuyama Dam and Tokunoyamahattoku Bridge seen from Mount Hanabusa in Ibigawa, Gifu prefecture, Japan.",
+    "original_title": "Tokuyama Dam from Mount Hanabusa",
     "path": "./assets/tokuyama.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -319,7 +319,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Gandate_2025-08-23.jpg",
     "date_taken": "23 August 2025, 14:17:29",
     "provider": "Wikimedia Commons",
-    "original_description": "Gandate in Gero, Gifu Prefecture, Japan",
+    "original_title": "Gandate 2025-08-23",
     "path": "./assets/gandate.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -334,7 +334,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Mitsu_Falls.jpg",
     "date_taken": "Taken on 1 September 2023, 13:07:12",
     "provider": "Wikimedia Commons",
-    "original_description": "Mitsu Falls in Kara River, Gero, Gifu Prefecture, Japan.",
+    "original_title": "Mitsu Falls",
     "path": "./assets/gandate-02.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -349,7 +349,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:%E6%A8%AA%E8%94%B5%E5%AF%BA_(49315687798).jpg",
     "date_taken": "2020-01-01 13:51",
     "provider": "Wikimedia Commons",
-    "original_description": "Yokokura-ji of the Buddhist temple in Ibigawa, Gifu, Japan",
+    "original_title": "横蔵寺 (49315687798)",
     "path": "./assets/yokokura.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -364,7 +364,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Hakusui_lake_and_Mount_Bessan_2008-05-27.jpg",
     "date_taken": "2008-05-27",
     "provider": "Wikimedia Commons",
-    "original_description": "Hakusui_lake and Mount Bessan",
+    "original_title": "Hakusui lake and Mount Bessan 2008-05-27",
     "path": "./assets/hakusui.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -379,7 +379,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:%E7%99%BD%E6%B0%B4%E6%B9%96_-_panoramio.jpg",
     "date_taken": "Taken on 26 October 2010",
     "provider": "Wikimedia Commons",
-    "original_description": "白水湖",
+    "original_title": "白水湖 - panoramio",
     "path": "./assets/hakusui-02.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -394,7 +394,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Hisuikyo_Shirakawa02s3200.jpg",
     "date_taken": "2007-11-24",
     "provider": "Wikimedia Commons",
-    "original_description": "Hisuikyo at Shirakawa-cho, Gifu prefecture, Japan",
+    "original_title": "Hisuikyo Shirakawa02s3200",
     "path": "./assets/hisui.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -409,7 +409,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Meoto_waterfall_(Takayama).jpg",
     "date_taken": "2002-06-24 06:54:07",
     "provider": "Wikimedia Commons",
-    "original_description": "Meoto waterfall in Kuguno, Takayama, Gifu prefecture, Japan.",
+    "original_title": "Meoto waterfall (Takayama)",
     "path": "./assets/menodaki.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -424,7 +424,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Oyada-Jinjya06.JPG",
     "date_taken": "Taken on 25 August 2007; 9 September 2007 (upload date)",
     "provider": "Wikimedia Commons",
-    "original_description": "Oyada Jinjya(Shrine)(ja:大矢田神社),Mino,Gifu,Japan(岐阜県美濃市)で撮影",
+    "original_title": "Oyada-Jinjya06",
     "path": "./assets/oyada.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -439,7 +439,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Miboro_Dam_Lake_from_R156.jpg",
     "date_taken": "2009-05-14",
     "provider": "Wikimedia Commons",
-    "original_description": "国道156号からの御母衣湖上部",
+    "original_title": "Miboro Dam Lake from R156",
     "path": "./assets/miboro.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -454,7 +454,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Goho_Falls.jpg",
     "date_taken": "Taken on 25 January 2025, 12:09:15",
     "provider": "Wikimedia Commons",
-    "original_description": "Ichino Fall, Nino Fall and Sanno Fall (Goho Falls) in Yaotsu, Gifu Prefecture, Japan.",
+    "original_title": "Goho Falls",
     "path": "./assets/goho.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -469,12 +469,12 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Yokotani_Valley_Keimei_Waterfall.JPG",
     "date_taken": "2012-08-04",
     "provider": "Wikimedia Commons",
-    "original_description": "横谷峡・鶏鳴滝",
+    "original_title": "Yokotani Valley Keimei Waterfall",
     "path": "./assets/yokotani.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
   "tengai": {
-    "title": "天蓋山からの北アルプス",
+    "title": "天蓋山",
     "source_url": "https://openphoto.app/c/hidacity/photo/24509",
     "author": "飛騨市",
     "license": "CC BY 4.0",
@@ -487,7 +487,7 @@ export const PHOTOS = {
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
   "tengai-02": {
-    "title": "天蓋山の山頂",
+    "title": "天蓋山",
     "source_url": "https://openphoto.app/c/hidacity/photo/24510",
     "author": "飛騨市",
     "license": "CC BY 4.0",
@@ -510,13 +510,13 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Shiramizu_Falls.jpg",
     "date_taken": "2002-08-27 12:33:23",
     "provider": "Wikimedia Commons",
-    "original_description": "Shiramizu Falls (Shiramizu-no-taki) in Shirakawa village, Gifu pref., Japan.",
+    "original_title": "Shiramizu Falls",
     "path": "./assets/shiramizu.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
   "tanigumi": {
     "title": "谷汲山の参道",
-    "caption": "谷汲山華厳寺の森と石段",
+    "caption": "谷汲山華厳寺の森と石仏",
     "focal": "50% 50%",
     "focalWide": "50% 45%",
     "author": "z tanuki",
@@ -525,7 +525,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Tanugumisan_Kegonji_temple_,_%E8%B0%B7%E6%B1%B2%E5%B1%B1%E8%8F%AF%E5%8E%B3%E5%AF%BA_-_panoramio_(10).jpg",
     "date_taken": "Taken on 26 July 2015",
     "provider": "Wikimedia Commons",
-    "original_description": "Tanugumisan Kegonji temple , 谷汲山華厳寺",
+    "original_title": "Tanugumisan Kegonji temple , 谷汲山華厳寺 - panoramio (10)",
     "path": "./assets/tanigumi.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -540,7 +540,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Nakayamashichiri_valley.JPG",
     "date_taken": "2008-04-12",
     "provider": "Wikimedia Commons",
-    "original_description": "Nakayama-shichiri valley (Gifu Pref./Japan)",
+    "original_title": "Nakayamashichiri valley",
     "path": "./assets/nakayama.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -555,7 +555,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Nakayama_Shichiri_2.JPG",
     "date_taken": "2012-08-04",
     "provider": "Wikimedia Commons",
-    "original_description": "中山七里2",
+    "original_title": "Nakayama Shichiri 2",
     "path": "./assets/nakayama-02.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -570,7 +570,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Amidaga_Falls_(2017-10-24).jpg",
     "date_taken": "2017-10-24 08:25:21",
     "provider": "Wikimedia Commons",
-    "original_description": "Amidaga Falls (Amidagataki) in Maetani, Gujō, Gifu Prefectue, Japan.",
+    "original_title": "Amidaga Falls (2017-10-24)",
     "path": "./assets/amida.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -585,7 +585,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:Amidaga_Falls.jpg",
     "date_taken": "2017-10-24 08:29:32",
     "provider": "Wikimedia Commons",
-    "original_description": "Amidaga Falls (Amidagataki) in Maetani, Gujō, Gifu Prefectue, Japan.",
+    "original_title": "Amidaga Falls",
     "path": "./assets/amida-02.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   },
@@ -600,7 +600,7 @@ export const PHOTOS = {
     "source_url": "https://commons.wikimedia.org/wiki/File:%E4%BD%8D%E5%B1%B1%E5%B1%B1%E9%A0%82%E4%BB%98%E8%BF%91_-_panoramio.jpg",
     "date_taken": "Taken on 14 January 2012",
     "provider": "Wikimedia Commons",
-    "original_description": "位山山頂付近",
+    "original_title": "位山山頂付近 - panoramio",
     "path": "./assets/kurai.webp",
     "changes": "縮小・WebP変換。画面比率に合わせて表示範囲を調整。"
   }

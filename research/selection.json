@@ -1,0 +1,2348 @@
+{
+  "researchedCandidates": 40,
+  "selectedSpots": 30,
+  "checkedOn": "2026-10-07",
+  "candidates": [
+    {
+      "id": "kabusugi",
+      "selected": true,
+      "name": "株杉の森",
+      "reading": "かぶすぎのもり",
+      "city": "関市",
+      "district": "板取",
+      "area": "chuno",
+      "category": "forest",
+      "address": "岐阜県関市板取2340-5",
+      "summary": "一本の根元から何本もの幹が伸びる杉の森。",
+      "description": "21世紀の森公園の自然観察道沿い。太い株から枝分かれした杉が、蕪山の登山口近くにまとまって残っています。",
+      "source": "https://www.kankou-gifu.jp/spot/detail_6321.html",
+      "extraSources": [
+        "https://sekikanko.jp/spot/detail_1037.html",
+        "https://sekikanko.jp/spot/detail_1036.html",
+        "https://www.city.seki.lg.jp/cmsfiles/contents/0000018/18500/chiiki-itadori-weekday%28R80401%29.pdf"
+      ],
+      "reference": "https://note.com/snishioka/n/n97ee622d9227",
+      "fees": "見学無料。",
+      "walk": "森林歩きおすすめ",
+      "cycle": "自転車＋徒歩",
+      "rail": "電車＋バス",
+      "access": "原駅 → JR岐阜駅 → 岐阜バス・ほらどキウイプラザ → 板取ふれあいバス・21世紀の森 → 徒歩約200m。",
+      "coordinates": {
+        "lat": 35.7252849,
+        "lon": 136.7836037
+      },
+      "arrival": "21世紀の森公園・自然観察道入口",
+      "routeDestination": "21世紀の森公園 岐阜県関市板取2340-5",
+      "travelReasons": {
+        "walk": "公園内の自然観察道に株杉が群生する。",
+        "cycle": "森の内部は徒歩で見学する。",
+        "rail": "岐阜駅から二つのバスを乗り継ぎ、公園から徒歩200m。"
+      },
+      "researchFacts": [
+        "推定樹齢400～500年の株杉が50株以上。",
+        "普通自動車用駐車場50台。"
+      ],
+      "searchQuery": "\"株杉\" \"岐阜\" \"住所\"",
+      "checkedOn": "2026-10-07",
+      "origin": "原駅 愛知県名古屋市天白区",
+      "travel": {
+        "walk": true,
+        "cycle": false,
+        "rail": false
+      },
+      "coordinateSource": "https://www.kankou-gifu.jp/spot/detail_6321.html",
+      "routeEndpointSource": "https://www.kankou-gifu.jp/spot/detail_6321.html",
+      "verifiedMapCoordinates": [
+        {
+          "lat": 35.7252849,
+          "lon": 136.7836037,
+          "type": "official-embed-marker"
+        }
+      ],
+      "coordinateBasis": "公式ページの埋め込み地図。地形を示す点であり、自動車到着は到着先住所と道路沿いの入口を用いる。"
+    },
+    {
+      "id": "enbara",
+      "selected": true,
+      "name": "円原川の伏流水",
+      "reading": "えんばらがわのふくりゅうすい",
+      "city": "山県市",
+      "district": "円原",
+      "area": "gifu",
+      "category": "water",
+      "address": "岐阜県山県市円原",
+      "summary": "苔のついた岩の間から湧き出す川。",
+      "description": "地中を流れた水が、岩の間から川に戻る場所です。川岸では、苔の広がる岩と透明な流れを近くから見られます。",
+      "source": "https://www.kankou-gifuyamagata.jp/article/deatils/enbarafuku",
+      "extraSources": [
+        "https://www.kankou-gifu.jp/spot/detail_5980.html",
+        "https://www.city.yamagata.gifu.jp/site/yamanavi/8015.html",
+        "https://find47.jp/ja/i/yryjM"
+      ],
+      "reference": "https://note.com/kanakoozeki/n/n4431b99d3f1a",
+      "fees": "",
+      "walk": "川沿いの短い散策",
+      "cycle": "自転車＋徒歩",
+      "rail": "車アクセス中心",
+      "access": "原駅 → 車で山県市円原 → 伏流水地点付近の川沿いの道。",
+      "coordinates": {
+        "lat": 35.660902714553,
+        "lon": 136.734656516375
+      },
+      "coordinateSource": "https://find47.jp/ja/i/yryjM",
+      "coordinateBasis": "FIND/47実景写真の位置。公式の地区全体の地図マーカーではなく、伏流水地点付近を到着点とする。",
+      "arrival": "円原川・伏流水地点付近",
+      "routeDestination": "円原川の伏流水 岐阜県山県市円原",
+      "travelReasons": {
+        "walk": "駐車場から伏流水地点へ降りる道がある。",
+        "cycle": "川岸で見る部分は徒歩。",
+        "rail": "確認できた現地アクセスは車中心。"
+      },
+      "researchFacts": [
+        "山県市公式観光サイトに駐車場8台の記載。",
+        "所在地は円原まで。未確認の番地は追加しない。"
+      ],
+      "searchQuery": "\"円原川の伏流水\" 山県 住所",
+      "checkedOn": "2026-10-07",
+      "origin": "原駅 愛知県名古屋市天白区",
+      "travel": {
+        "walk": true,
+        "cycle": false,
+        "rail": false
+      },
+      "routeEndpointSource": "https://find47.jp/ja/i/yryjM"
+    },
+    {
+      "id": "tomida",
+      "selected": true,
+      "name": "富田農村景観",
+      "reading": "とみだのうそんけいかん",
+      "city": "恵那市",
+      "district": "岩村町富田",
+      "area": "tono",
+      "category": "rural",
+      "address": "岐阜県恵那市岩村町富田2165-4",
+      "summary": "岩村盆地の田んぼと、瓦屋根の農家。",
+      "description": "小高い展望所から、田んぼの間に農家や土蔵が点在する富田地区を見渡せます。集落の周りには低い丘が続きます。",
+      "source": "https://www.kankou-gifu.jp/spot/detail_8386.html",
+      "extraSources": [
+        "https://iwamura.jp/landscape/",
+        "https://www.maff.go.jp/j/nousin/sekkei/midori/m_walk/course5/22gif/index.html"
+      ],
+      "fees": "展望所・駐車無料。",
+      "walk": "徒歩旅おすすめ",
+      "cycle": "現地ライドおすすめ",
+      "rail": "電車旅おすすめ",
+      "access": "原駅 → JR中央本線・恵那駅 → 明知鉄道・飯羽間駅 → 展望所まで徒歩約30分。",
+      "coordinates": {
+        "lat": 35.38219237229515,
+        "lon": 137.45716094970703
+      },
+      "arrival": "富田・農村景観展望所",
+      "routeDestination": "農村景観日本一展望所 岐阜県恵那市岩村町富田2165-4",
+      "travelReasons": {
+        "walk": "飯羽間駅から展望所への徒歩経路が公式に記載されている。",
+        "cycle": "岩村観光協会の地域案内にも農村ウォーキング・サイクリングの記載がある。田園の道路を巡る現地ライドの推薦。",
+        "rail": "明知鉄道飯羽間駅から徒歩約30分。"
+      },
+      "researchFacts": [
+        "公式掲載の住所は展望所。",
+        "常時開放、無料駐車場約5台。"
+      ],
+      "searchQuery": "\"富田\" \"2165-4\"",
+      "checkedOn": "2026-10-07",
+      "origin": "原駅 愛知県名古屋市天白区",
+      "travel": {
+        "walk": true,
+        "cycle": true,
+        "rail": true
+      },
+      "coordinateSource": "https://www.kankou-gifu.jp/spot/detail_8386.html",
+      "routeEndpointSource": "https://www.kankou-gifu.jp/spot/detail_8386.html",
+      "verifiedMapCoordinates": [
+        {
+          "lat": 35.38219237229515,
+          "lon": 137.45716094970703,
+          "type": "official-embed-marker"
+        }
+      ],
+      "coordinateBasis": "公式ページの埋め込み地図。地形を示す点であり、自動車到着は到着先住所と道路沿いの入口を用いる。"
+    },
+    {
+      "id": "kuronota",
+      "selected": true,
+      "name": "黒の田東湿地",
+      "reading": "くろのたひがししっち",
+      "city": "瑞浪市",
+      "district": "稲津町",
+      "area": "tono",
+      "category": "forest",
+      "address": "岐阜県瑞浪市稲津町（屏風山南東部）",
+      "summary": "屏風山の森の中に広がる湿地と木道。",
+      "description": "山道を歩いた先に、約2.5haの湿地が開けます。木道の周りでは、季節ごとの草花と湿地を囲む林を眺められます。",
+      "source": "https://xn--w0w51m.com/seeing/category/nature-scenery/p3732/",
+      "extraSources": [
+        "https://geo-gifu.org/geoland/7_keisyouchi_keikan/keisyouchi_49_kuronotahigashishicchi.html",
+        "https://www.ii-nuts.jp/byobusan",
+        "https://www.ii-nuts.jp/iinuts/wp-content/themes/inatsu/image/mountain/byobusan.pdf",
+        "https://www.env.go.jp/nature/satoyama/21_gifu/no21-6.html"
+      ],
+      "reference": "https://note.com/moral_colt4717/n/n8037da853971",
+      "fees": "",
+      "walk": "山道・木道を歩く",
+      "cycle": "登山口＋徒歩",
+      "rail": "車アクセス中心",
+      "access": "原駅 → 車で寿老の滝の駐車場 → 屏風山の登山道 → 黒の田東湿地。",
+      "coordinates": {
+        "lat": 35.35719379500342,
+        "lon": 137.31440303277395
+      },
+      "arrivalCoordinates": {
+        "lat": 35.366283,
+        "lon": 137.338647
+      },
+      "arrivalCoordinateSource": "https://www.kankou-ena.jp/738.php",
+      "arrival": "寿老の滝・屏風山登山口",
+      "routeDestination": "寿老の滝 岐阜県恵那市三郷町椋実",
+      "travelReasons": {
+        "walk": "登山道から湿地の木道へ進む場所。",
+        "cycle": "乗り物の到着点は登山口。",
+        "rail": "観光協会はJR瑞浪駅からタクシー20分と記載。駅から歩ける推薦にはしない。"
+      },
+      "researchFacts": [
+        "湿地の座標と自動車到着点を分離。",
+        "登山道・登り口は地元まちづくり推進協議会の案内図を根拠とする。"
+      ],
+      "searchQuery": "\"黒の田東湿地\" 住所 瑞浪",
+      "checkedOn": "2026-10-07",
+      "origin": "原駅 愛知県名古屋市天白区",
+      "travel": {
+        "walk": true,
+        "cycle": false,
+        "rail": false
+      },
+      "coordinateSource": "https://xn--w0w51m.com/seeing/category/nature-scenery/p3732/",
+      "routeEndpointSource": "https://www.kankou-ena.jp/738.php",
+      "verifiedMapCoordinates": [
+        {
+          "lat": 35.35719379500342,
+          "lon": 137.31440303277395,
+          "type": "official-embed-center"
+        }
+      ],
+      "coordinateBasis": "公式ページの埋め込み地図。地形を示す点であり、自動車到着は到着先住所と道路沿いの入口を用いる。"
+    },
+    {
+      "id": "nenoue",
+      "selected": true,
+      "name": "根の上高原",
+      "reading": "ねのうえこうげん",
+      "city": "恵那市・中津川市",
+      "district": "東野・茄子川",
+      "area": "tono",
+      "category": "lake",
+      "address": "岐阜県恵那市東野（保古の湖畔）",
+      "summary": "二つの湖と、湖畔の林を歩く高原。",
+      "description": "恵那市と中津川市の境にある高原です。保古の湖と根の上湖の周りに、湖畔や湿地を巡る散策道が整備されています。",
+      "source": "https://www.kankou-ena.jp/713.php",
+      "extraSources": [
+        "https://www.kankou-gifu.jp/spot/detail_6785.html",
+        "https://www.city.nakatsugawa.lg.jp/kanko/miru/1/3747.html",
+        "https://www.nenoue969.com/"
+      ],
+      "fees": "",
+      "walk": "湖畔歩きおすすめ",
+      "cycle": "自転車＋徒歩",
+      "rail": "車アクセス中心",
+      "access": "原駅 → 車で恵那市東野 → 県道407号・413号線 → 保古の湖畔。",
+      "coordinates": {
+        "lat": 35.44033935075236,
+        "lon": 137.49181071554642
+      },
+      "arrival": "根の上高原・保古の湖畔",
+      "routeDestination": "保古の湖 岐阜県恵那市東野",
+      "travelReasons": {
+        "walk": "湖畔と湿地を巡る散策道が公式に記載されている。",
+        "cycle": "湖畔の散策道は徒歩案内を主とする。",
+        "rail": "公式アクセスは恵那駅から車約30分。"
+      },
+      "researchFacts": [
+        "市・恵那観光協会は標高約930mと記載。",
+        "掲載写真が恵那山の遠景の場合、湖畔の写真と説明しない。"
+      ],
+      "searchQuery": "\"根の上高原\" \"恵那\" 公式",
+      "checkedOn": "2026-10-07",
+      "origin": "原駅 愛知県名古屋市天白区",
+      "travel": {
+        "walk": true,
+        "cycle": false,
+        "rail": false
+      },
+      "coordinateSource": "https://www.kankou-ena.jp/713.php",
+      "routeEndpointSource": "https://www.kankou-ena.jp/713.php",
+      "verifiedMapCoordinates": [
+        {
+          "lat": 35.44033935075236,
+          "lon": 137.49181071554642,
+          "type": "official-embed-center"
+        }
+      ],
+      "coordinateBasis": "公式ページの埋め込み地図。地形を示す点であり、自動車到着は到着先住所と道路沿いの入口を用いる。"
+    },
+    {
+      "id": "juro",
+      "selected": true,
+      "name": "寿老の滝",
+      "reading": "じゅろうのたき",
+      "city": "恵那市",
+      "district": "三郷町椋実",
+      "area": "tono",
+      "category": "water",
+      "address": "岐阜県恵那市三郷町椋実",
+      "summary": "三郷町の森に落ちる、落差約10mの滝。",
+      "description": "三郷町と山岡町の境にある滝です。川沿いの木々と、岩を下る流れを短い散策で眺められます。",
+      "source": "https://www.kankou-ena.jp/738.php",
+      "extraSources": [
+        "https://www.city.ena.lg.jp/ena_diary/reiwa7nen/reiwa7nen7gatu/18284.html",
+        "https://www.ii-nuts.jp/byobusan"
+      ],
+      "fees": "",
+      "walk": "短い散策向き",
+      "cycle": "自転車＋徒歩",
+      "rail": "車アクセス中心",
+      "access": "原駅 → 車で恵那市三郷町椋実 → 寿老の滝の駐車場 → 川沿いへ徒歩。",
+      "coordinates": {
+        "lat": 35.366283,
+        "lon": 137.338647
+      },
+      "arrival": "寿老の滝・駐車場付近",
+      "routeDestination": "寿老の滝 岐阜県恵那市三郷町椋実",
+      "travelReasons": {
+        "walk": "滝の近くまで道路と駐車場がある。",
+        "cycle": "滝を眺める部分は徒歩。",
+        "rail": "公式の到着案内は車。"
+      },
+      "researchFacts": [
+        "公式更新2025年9月24日。",
+        "屏風山登山口の駐車場としても地元の案内に掲載。"
+      ],
+      "searchQuery": "\"寿老の滝\" \"恵那\" 公式",
+      "checkedOn": "2026-10-07",
+      "origin": "原駅 愛知県名古屋市天白区",
+      "travel": {
+        "walk": true,
+        "cycle": false,
+        "rail": false
+      },
+      "coordinateSource": "https://www.kankou-ena.jp/738.php",
+      "routeEndpointSource": "https://www.kankou-ena.jp/738.php",
+      "verifiedMapCoordinates": [
+        {
+          "lat": 35.366283,
+          "lon": 137.338647,
+          "type": "official-embed-center"
+        }
+      ],
+      "coordinateBasis": "公式ページの埋め込み地図。地形を示す点であり、自動車到着は到着先住所と道路沿いの入口を用いる。"
+    },
+    {
+      "id": "kaore",
+      "selected": true,
+      "name": "川浦渓谷",
+      "reading": "かおれけいこく",
+      "city": "関市",
+      "district": "板取川浦",
+      "area": "chuno",
+      "category": "water",
+      "address": "岐阜県関市板取川浦",
+      "summary": "深い岩壁の間を板取川が流れる谷。",
+      "description": "新錦トンネルの先から、渓谷沿いの遊歩道へ。高さ40～50mの岩壁と、橋や東屋から見える川の流れが見どころです。",
+      "source": "https://sekikanko.jp/spot/detail_1003.html",
+      "extraSources": [],
+      "fees": "見学無料。",
+      "walk": "渓谷歩きおすすめ",
+      "cycle": "自転車＋徒歩",
+      "rail": "車アクセス中心",
+      "access": "原駅 → 車で関市板取川浦 → 新錦トンネル先の駐車場 → 遊歩道。",
+      "coordinates": {
+        "lat": 35.752921,
+        "lon": 136.755409
+      },
+      "coordinateSource": "https://sekikanko.jp/spot/detail_1003.html",
+      "coordinateBasis": "公式『Googleマップを開く』の経路到着座標。",
+      "arrival": "川浦渓谷・新錦トンネル先",
+      "routeDestination": "川浦渓谷 岐阜県関市板取川浦",
+      "travelReasons": {
+        "walk": "遊歩道と東屋から渓谷を見る場所。",
+        "cycle": "遊歩道は徒歩で巡る。",
+        "rail": "公式アクセスは美濃ICから車約1時間。"
+      },
+      "researchFacts": [
+        "普通車駐車場10台。",
+        "渓谷全長約7kmは地形の長さ。散策路7kmとは書かない。"
+      ],
+      "searchQuery": "\"川浦渓谷\" \"住所\"",
+      "checkedOn": "2026-10-07",
+      "origin": "原駅 愛知県名古屋市天白区",
+      "travel": {
+        "walk": true,
+        "cycle": false,
+        "rail": false
+      },
+      "routeEndpointSource": "https://sekikanko.jp/spot/detail_1003.html",
+      "verifiedMapCoordinates": [
+        {
+          "lat": 35.752921,
+          "lon": 136.755409,
+          "type": "official-embed-marker"
+        },
+        {
+          "lat": 35.752921,
+          "lon": 136.755409,
+          "type": "inline"
+        }
+      ]
+    },
+    {
+      "id": "hisui",
+      "selected": true,
+      "name": "飛水峡（白川町）",
+      "reading": "ひすいきょう",
+      "city": "白川町",
+      "district": "河岐",
+      "area": "chuno",
+      "category": "water",
+      "address": "岐阜県加茂郡白川町河岐",
+      "summary": "岩盤を深く削って流れる飛騨川の峡谷。",
+      "description": "白川町から七宗町へ続く峡谷です。白川町側は国道41号のポケットパークから、岩の間を流れる飛騨川を見られます。",
+      "source": "https://www.kankou-gifu.jp/spot/detail_4201.html",
+      "extraSources": [
+        "https://mino-shirakawa.com/explore/hisuikyou/"
+      ],
+      "fees": "",
+      "walk": "展望地点を短く歩く",
+      "cycle": "自転車＋徒歩",
+      "rail": "車アクセス中心",
+      "access": "原駅 → 車で国道41号・白川町河岐 → 飛水峡のポケットパーク。",
+      "coordinates": {
+        "lat": 35.5615221336348,
+        "lon": 137.18482017517
+      },
+      "arrival": "飛水峡・白川町側の展望地点",
+      "routeDestination": "飛水峡 岐阜県加茂郡白川町河岐",
+      "travelReasons": {
+        "walk": "国道41号のポケットパークが公式の展望地点。",
+        "cycle": "渓谷を眺める地点で徒歩に切り替える。",
+        "rail": "白川町側で駅徒歩の経路は確認していない。"
+      },
+      "researchFacts": [
+        "約12kmは白川町から七宗町へ続く地形の長さ。",
+        "七宗町側の甌穴群やロックガーデンと到着地点を混同しない。"
+      ],
+      "searchQuery": "\"飛水峡\" \"白川町\" 公式",
+      "checkedOn": "2026-10-07",
+      "origin": "原駅 愛知県名古屋市天白区",
+      "travel": {
+        "walk": true,
+        "cycle": false,
+        "rail": false
+      },
+      "coordinateSource": "https://www.kankou-gifu.jp/spot/detail_4201.html",
+      "routeEndpointSource": "https://www.kankou-gifu.jp/spot/detail_4201.html",
+      "verifiedMapCoordinates": [
+        {
+          "lat": 35.5615221336348,
+          "lon": 137.18482017517,
+          "type": "official-embed-marker"
+        }
+      ],
+      "coordinateBasis": "公式ページの埋め込み地図。地形を示す点であり、自動車到着は到着先住所と道路沿いの入口を用いる。"
+    },
+    {
+      "id": "goho",
+      "selected": true,
+      "name": "五宝滝",
+      "reading": "ごほうだき",
+      "city": "八百津町",
+      "district": "八百津",
+      "area": "chuno",
+      "category": "water",
+      "address": "岐阜県加茂郡八百津町八百津4767-3（駐車場）",
+      "summary": "三段の滝と、谷に沿って続く森の道。",
+      "description": "一の滝・二の滝・三の滝は、三段を合わせて落差約80m。二天の滝、円明の滝もある谷を、木々の間の道で巡ります。",
+      "source": "https://www.kankou-gifu.jp/spot/detail_4224.html",
+      "extraSources": [
+        "https://www.town.yaotsu.lg.jp/5717.htm"
+      ],
+      "fees": "見学無料。",
+      "walk": "滝めぐりおすすめ",
+      "cycle": "自転車＋徒歩",
+      "rail": "鉄道＋バス",
+      "access": "原駅 → 名鉄・明智駅 → YAOバス・八百津町ファミリーセンター → 平日のやおまる西部・五宝滝入口 → 徒歩約20分。",
+      "coordinates": {
+        "lat": 35.5048746,
+        "lon": 137.1559084
+      },
+      "arrival": "五宝滝・駐車場",
+      "routeDestination": "五宝滝 駐車場 岐阜県加茂郡八百津町八百津4767-3",
+      "travelReasons": {
+        "walk": "五つの滝を巡る散策路がある。",
+        "cycle": "滝周辺は徒歩。",
+        "rail": "明智駅からYAOバスと平日のやおまる西部を乗り継ぐ。"
+      },
+      "researchFacts": [
+        "県公式は八百津4767-3を駐車場住所として明記。",
+        "町FAQの4763-3は別番地。到着先は県公式の駐車場番地で統一。",
+        "やおまる西部は土日運行なし。"
+      ],
+      "searchQuery": "\"五宝滝\" \"八百津\" \"住所\"",
+      "checkedOn": "2026-10-07",
+      "origin": "原駅 愛知県名古屋市天白区",
+      "travel": {
+        "walk": true,
+        "cycle": false,
+        "rail": false
+      },
+      "coordinateSource": "https://www.kankou-gifu.jp/spot/detail_4224.html",
+      "routeEndpointSource": "https://www.kankou-gifu.jp/spot/detail_4224.html",
+      "verifiedMapCoordinates": [
+        {
+          "lat": 35.5048746,
+          "lon": 137.1559084,
+          "type": "official-embed-marker"
+        }
+      ],
+      "coordinateBasis": "公式ページの埋め込み地図。地形を示す点であり、自動車到着は到着先住所と道路沿いの入口を用いる。"
+    },
+    {
+      "id": "oyada",
+      "selected": true,
+      "name": "大矢田神社もみじ谷",
+      "reading": "おやだじんじゃもみじだに",
+      "city": "美濃市",
+      "district": "大矢田",
+      "area": "chuno",
+      "category": "forest",
+      "address": "岐阜県美濃市大矢田2596",
+      "summary": "石段の周りに広がる、楓の自然林。",
+      "description": "天王山の麓にある神社の参道です。石段を上りながら、ヤマモミジやイロハモミジの林と古い木造の門を見られます。",
+      "source": "https://minokanko.com/seeing/category/history-culture/p5983/",
+      "extraSources": [
+        "https://www.kankou-gifu.jp/spot/detail_1191.html",
+        "https://gifu-jinjacho.jp/syosai.php?shrno=2479",
+        "https://minokanko.com/news/news/p10965/"
+      ],
+      "fees": "境内無料。",
+      "walk": "参道歩きおすすめ",
+      "cycle": "自転車＋徒歩",
+      "rail": "電車＋バス",
+      "access": "原駅 → JR岐阜駅 → 岐阜バス高美線・大矢田神社前 → 徒歩約30分。",
+      "coordinates": {
+        "lat": 35.55639,
+        "lon": 136.868577
+      },
+      "arrival": "大矢田神社・参道入口",
+      "routeDestination": "大矢田神社 岐阜県美濃市大矢田2596",
+      "travelReasons": {
+        "walk": "もみじ谷の参道・石段が主な鑑賞経路。",
+        "cycle": "神社の参道を徒歩で巡る。",
+        "rail": "岐阜バス高美線の停留所から徒歩30分。"
+      },
+      "researchFacts": [
+        "神社庁・観光協会のお知らせに2596番地。",
+        "境内無料。秋季駐車料金は額未確認のため数値は掲載しない。"
+      ],
+      "searchQuery": "\"大矢田神社\" \"2596\"",
+      "checkedOn": "2026-10-07",
+      "origin": "原駅 愛知県名古屋市天白区",
+      "travel": {
+        "walk": true,
+        "cycle": false,
+        "rail": false
+      },
+      "coordinateSource": "https://www.kankou-gifu.jp/spot/detail_1191.html",
+      "routeEndpointSource": "https://www.kankou-gifu.jp/spot/detail_1191.html",
+      "verifiedMapCoordinates": [
+        {
+          "lat": 35.55639,
+          "lon": 136.868577,
+          "type": "official-embed-marker"
+        }
+      ]
+    },
+    {
+      "id": "amida",
+      "selected": true,
+      "name": "阿弥陀ヶ滝",
+      "reading": "あみだがたき",
+      "city": "郡上市",
+      "district": "白鳥町前谷",
+      "area": "chuno",
+      "category": "water",
+      "address": "岐阜県郡上市白鳥町前谷",
+      "summary": "木々に囲まれた岩壁を、約60m落ちる滝。",
+      "description": "白鳥町前谷にある、落差約60mの滝です。森の中の遊歩道を進むと、大きな岩壁と滝つぼの流れを見られます。",
+      "source": "https://www.kankou-gifu.jp/spot/detail_3466.html",
+      "extraSources": [
+        "https://www.pref.gifu.lg.jp/page/3181.html",
+        "https://tabitabigujo.com/spots/shirotori/阿弥陀ヶ滝/"
+      ],
+      "fees": "",
+      "walk": "滝への散策おすすめ",
+      "cycle": "自転車＋徒歩",
+      "rail": "車アクセス中心",
+      "access": "原駅 → 車で郡上市白鳥町前谷 → 阿弥陀ヶ滝の入口 → 遊歩道。",
+      "coordinates": {
+        "lat": 35.9597279,
+        "lon": 136.8176861
+      },
+      "arrival": "阿弥陀ヶ滝・遊歩道入口付近",
+      "routeDestination": "阿弥陀ヶ滝 岐阜県郡上市白鳥町前谷",
+      "travelReasons": {
+        "walk": "滝つぼ近くまで遊歩道があると県公式に記載。",
+        "cycle": "滝周辺は遊歩道を徒歩で巡る。",
+        "rail": "公式に確認できた案内は車。"
+      },
+      "researchFacts": [
+        "入場・駐車料金の額は確認できた一次情報に記載がないため空欄。"
+      ],
+      "searchQuery": "\"阿弥陀ヶ滝\" 公式 住所",
+      "checkedOn": "2026-10-07",
+      "origin": "原駅 愛知県名古屋市天白区",
+      "travel": {
+        "walk": true,
+        "cycle": false,
+        "rail": false
+      },
+      "coordinateSource": "https://www.kankou-gifu.jp/spot/detail_3466.html",
+      "routeEndpointSource": "https://www.kankou-gifu.jp/spot/detail_3466.html",
+      "verifiedMapCoordinates": [
+        {
+          "lat": 35.9597279,
+          "lon": 136.8176861,
+          "type": "official-embed-marker"
+        }
+      ],
+      "coordinateBasis": "公式ページの埋め込み地図。地形を示す点であり、自動車到着は到着先住所と道路沿いの入口を用いる。"
+    },
+    {
+      "id": "tokuyama",
+      "selected": true,
+      "name": "徳山湖",
+      "reading": "とくやまこ",
+      "city": "揖斐川町",
+      "district": "開田",
+      "area": "seino",
+      "category": "lake",
+      "address": "岐阜県揖斐郡揖斐川町開田448（徳山ダム管理所）",
+      "summary": "奥揖斐の山々に囲まれた、大きなダム湖。",
+      "description": "揖斐川をせき止めた徳山ダムの湖です。ダムの上や展望台から、水面と湖岸の山並みを見渡せます。",
+      "source": "https://www.kankou-gifu.jp/spot/detail_1146.html",
+      "extraSources": [
+        "https://www.kankou-gifu.jp/kyouiku/spot/detail_1146.html",
+        "https://www.water.go.jp/honsya/honsya/torikumi/tourism/damcard/area/kiso_toyo/tokuyama.html",
+        "https://www.water.go.jp/chubu/tokuyama/"
+      ],
+      "fees": "",
+      "walk": "展望地点を歩く",
+      "cycle": "自転車＋徒歩",
+      "rail": "車アクセス中心",
+      "access": "原駅 → 車で揖斐川町 → 国道303号・417号線 → 徳山ダム管理所の到着地点。",
+      "coordinates": {
+        "lat": 35.666466,
+        "lon": 136.498604
+      },
+      "arrival": "徳山ダム管理所・湖を望む展望地点",
+      "routeDestination": "徳山ダム管理所 岐阜県揖斐郡揖斐川町開田448",
+      "travelReasons": {
+        "walk": "ダム堤頂と展望台が公式の見学地点。",
+        "cycle": "湖全周の連続した走行ルートとは案内しない。",
+        "rail": "車到着が公式の案内。"
+      },
+      "researchFacts": [
+        "徳山ダム管理所の所在地開田448は水資源機構・県公式に一致。",
+        "写真が花房山からの遠景なら撮影位置をキャプションで区別。"
+      ],
+      "searchQuery": "\"徳山ダム\" \"住所\"",
+      "checkedOn": "2026-10-07",
+      "origin": "原駅 愛知県名古屋市天白区",
+      "travel": {
+        "walk": true,
+        "cycle": false,
+        "rail": false
+      },
+      "coordinateSource": "https://www.kankou-gifu.jp/spot/detail_1146.html",
+      "routeEndpointSource": "https://www.kankou-gifu.jp/spot/detail_1146.html",
+      "verifiedMapCoordinates": [
+        {
+          "lat": 35.666466,
+          "lon": 136.498604,
+          "type": "official-embed-marker"
+        }
+      ],
+      "coordinateBasis": "公式ページの埋め込み地図。地形を示す点であり、自動車到着は到着先住所と道路沿いの入口を用いる。"
+    },
+    {
+      "id": "yokokura",
+      "selected": true,
+      "name": "横蔵寺といこいの森",
+      "reading": "よこくらじといこいのもり",
+      "city": "揖斐川町",
+      "district": "谷汲神原",
+      "area": "seino",
+      "category": "forest",
+      "address": "岐阜県揖斐郡揖斐川町谷汲神原1160番地",
+      "summary": "山あいの寺と、その奥に続く森の道。",
+      "description": "谷汲の山中にある横蔵寺。境内の木々や飛鳥川の周りを眺め、奥のいこいの森へ続く歩道を歩けます。",
+      "source": "https://www.town.ibigawa.lg.jp/site/kankou/2401.html",
+      "extraSources": [
+        "https://www.kankou-gifu.jp/spot/detail_890.html",
+        "https://www.kankou-gifu.jp/blog/detail_400.html",
+        "https://www.town.ibigawa.lg.jp/page/2080.html"
+      ],
+      "fees": "境内・駐車無料。",
+      "walk": "森林歩きおすすめ",
+      "cycle": "自転車＋徒歩",
+      "rail": "電車＋バス",
+      "access": "原駅 → JR大垣駅 → 養老鉄道・揖斐駅 → ふれあいバス横蔵線 → 横蔵寺へ。",
+      "coordinates": {
+        "lat": 35.553876,
+        "lon": 136.56111
+      },
+      "arrival": "横蔵寺・いこいの森入口",
+      "routeDestination": "横蔵寺 岐阜県揖斐郡揖斐川町谷汲神原1160",
+      "travelReasons": {
+        "walk": "東海自然歩道といこいの森の遊歩道が県観光サイトに記載。",
+        "cycle": "森林内の歩道は徒歩案内。",
+        "rail": "養老鉄道揖斐駅から横蔵線がある。"
+      },
+      "researchFacts": [
+        "宝物殿・舎利堂の有料見学は案内対象外。",
+        "町公式2026年1月更新では境内と駐車は無料。",
+        "ふれあいバスの現行時刻表案内は町公式2026年1月20日更新、2025年10月1日改正。"
+      ],
+      "searchQuery": "\"横蔵寺\" \"いこいの森\"",
+      "checkedOn": "2026-10-07",
+      "origin": "原駅 愛知県名古屋市天白区",
+      "travel": {
+        "walk": true,
+        "cycle": false,
+        "rail": false
+      },
+      "coordinateSource": "https://www.kankou-gifu.jp/spot/detail_890.html",
+      "routeEndpointSource": "https://www.kankou-gifu.jp/spot/detail_890.html",
+      "verifiedMapCoordinates": [
+        {
+          "lat": 35.553876,
+          "lon": 136.56111,
+          "type": "official-embed-marker"
+        }
+      ]
+    },
+    {
+      "id": "tanigumi",
+      "selected": true,
+      "name": "谷汲山の参道",
+      "reading": "たにぐみさんのさんどう",
+      "city": "揖斐川町",
+      "district": "谷汲徳積",
+      "area": "seino",
+      "category": "forest",
+      "address": "岐阜県揖斐郡揖斐川町谷汲徳積23",
+      "summary": "大きな木々の間を、本堂へ上る参道。",
+      "description": "谷汲山華厳寺の山門から本堂へ。石段と木立が続き、春の新緑や秋のモミジを見ながら歩けます。",
+      "source": "https://www.kankou-gifu.jp/spot/detail_889.html",
+      "extraSources": [
+        "https://www.town.ibigawa.lg.jp/site/kankou/2418.html",
+        "https://kegonji.or.jp/",
+        "https://www.town.ibigawa.lg.jp/page/2080.html"
+      ],
+      "fees": "",
+      "walk": "参道歩きおすすめ",
+      "cycle": "自転車＋徒歩",
+      "rail": "電車＋バス",
+      "access": "原駅 → JR大垣駅 → 養老鉄道・揖斐駅 → ふれあいバス横蔵線・谷汲山 → 参道。",
+      "coordinates": {
+        "lat": 35.53743,
+        "lon": 136.607952
+      },
+      "arrival": "谷汲山華厳寺・参道入口",
+      "routeDestination": "谷汲山華厳寺 岐阜県揖斐郡揖斐川町谷汲徳積23",
+      "travelReasons": {
+        "walk": "山門から本堂の木立と参道が主な鑑賞場所。",
+        "cycle": "参道と石段を徒歩で巡る。",
+        "rail": "揖斐駅から横蔵線・谷汲山停留所、谷汲口駅から谷汲口線もある。"
+      },
+      "researchFacts": [
+        "観光公式は揖斐駅からバス約30分。",
+        "土産・飲食・有料施設は紹介しない。",
+        "ふれあいバスの現行時刻表案内は町公式2026年1月20日更新、2025年10月1日改正。"
+      ],
+      "searchQuery": "\"谷汲山\" \"参道\" 公式",
+      "checkedOn": "2026-10-07",
+      "origin": "原駅 愛知県名古屋市天白区",
+      "travel": {
+        "walk": true,
+        "cycle": false,
+        "rail": false
+      },
+      "coordinateSource": "https://www.kankou-gifu.jp/spot/detail_889.html",
+      "routeEndpointSource": "https://www.kankou-gifu.jp/spot/detail_889.html",
+      "verifiedMapCoordinates": [
+        {
+          "lat": 35.53743,
+          "lon": 136.607952,
+          "type": "official-embed-marker"
+        }
+      ],
+      "coordinateBasis": "公式ページの埋め込み地図。地形を示す点であり、自動車到着は到着先住所と道路沿いの入口を用いる。"
+    },
+    {
+      "id": "yumori",
+      "selected": false,
+      "name": "夕森渓谷",
+      "reading": "ゆうもりけいこく",
+      "city": "中津川市",
+      "district": "川上",
+      "area": "tono",
+      "category": "water",
+      "address": "岐阜県中津川市川上",
+      "summary": "川上川と竜神の滝を囲む渓谷。",
+      "description": "竜神の滝やもみじ橋の周囲に散策路がある渓谷です。",
+      "source": "https://www.city.nakatsugawa.lg.jp/kanko/miru/1/3758.html",
+      "extraSources": [
+        "https://www.city.nakatsugawa.lg.jp/kanko/oshirase/35053.html"
+      ],
+      "fees": "",
+      "walk": "渓谷の散策路",
+      "cycle": "自転車＋徒歩",
+      "rail": "車アクセス中心",
+      "access": "原駅 → 車で中津川市川上方面。",
+      "routeDestination": "夕森渓谷 岐阜県中津川市川上",
+      "arrival": "夕森渓谷・入口",
+      "coordinates": null,
+      "exclusionReason": "2025年7月10日の豪雨に伴う遊歩道の一部通行止めを、市の現行ページが引き続き掲載。経路の短い説明で閉鎖部分を誤案内しないため今回は除外。",
+      "researchFacts": [
+        "市掲載の所在地は中津川市川上。",
+        "2025年7月16日更新の案内。"
+      ],
+      "searchQuery": "\"夕森渓谷\" \"2025\" \"通行止め\" 公式",
+      "checkedOn": "2026-10-07",
+      "origin": "原駅 愛知県名古屋市天白区",
+      "travel": {
+        "walk": true,
+        "cycle": false,
+        "rail": false
+      },
+      "coordinateSource": "https://www.city.nakatsugawa.lg.jp/kanko/miru/1/3758.html",
+      "routeEndpointSource": "https://www.city.nakatsugawa.lg.jp/kanko/miru/1/3758.html"
+    },
+    {
+      "id": "tsukechi",
+      "selected": false,
+      "name": "付知峡",
+      "reading": "つけちきょう",
+      "city": "中津川市",
+      "district": "付知町",
+      "area": "tono",
+      "category": "water",
+      "address": "岐阜県中津川市付知町1区下浦地内",
+      "summary": "付知川の森と、滝を巡る遊歩道。",
+      "description": "観音滝や不動滝を含む約860mの遊歩道がある渓谷です。",
+      "source": "https://www.kankou-gifu.jp/spot/detail_5700.html",
+      "extraSources": [
+        "https://www.city.nakatsugawa.lg.jp/kanko/miru/1/3756.html",
+        "https://www.rinya.maff.go.jp/chubu/policy/business/invitation/rekumori/tsukechikyo.html"
+      ],
+      "fees": "",
+      "walk": "滝めぐり",
+      "cycle": "自転車＋徒歩",
+      "rail": "車アクセス中心",
+      "access": "原駅 → 車で中津川市付知町方面。",
+      "routeDestination": "付知峡 岐阜県中津川市付知町1区下浦地内",
+      "arrival": "付知峡・不動公園",
+      "coordinates": {
+        "lat": 35.698321,
+        "lon": 137.4414374
+      },
+      "exclusionReason": "中津川市が不動公園の混雑可視化とオーバーツーリズム対策を実施しており、今回の選定趣旨より他の森・渓谷を優先。",
+      "researchFacts": [
+        "森林浴の森日本100選。",
+        "県公式に住所・860mの遊歩道を記載。"
+      ],
+      "searchQuery": "\"付知峡\" 公式 住所",
+      "checkedOn": "2026-10-07",
+      "origin": "原駅 愛知県名古屋市天白区",
+      "travel": {
+        "walk": true,
+        "cycle": false,
+        "rail": false
+      },
+      "coordinateSource": "https://www.kankou-gifu.jp/spot/detail_5700.html",
+      "routeEndpointSource": "https://www.kankou-gifu.jp/spot/detail_5700.html",
+      "verifiedMapCoordinates": [
+        {
+          "lat": 35.698321,
+          "lon": 137.4414374,
+          "type": "official-embed-marker"
+        }
+      ],
+      "coordinateBasis": "公式ページの埋め込み地図。地形を示す点であり、自動車到着は到着先住所と道路沿いの入口を用いる。"
+    },
+    {
+      "id": "eihoji",
+      "selected": false,
+      "name": "虎渓山永保寺庭園",
+      "reading": "こけいざんえいほうじていえん",
+      "city": "多治見市",
+      "district": "虎渓山町",
+      "area": "tono",
+      "category": "forest",
+      "address": "岐阜県多治見市虎渓山町1丁目40",
+      "summary": "池と木々、橋を中心とする寺の庭園。",
+      "description": "観音堂の前に広がる池を中心とする庭園です。",
+      "source": "https://kokeizan.or.jp/pages/4/",
+      "extraSources": [
+        "https://kokeizan.or.jp/pages/25/",
+        "https://www.pref.gifu.lg.jp/page/366416.html",
+        "https://online.bunka.go.jp/heritages/detail/138607"
+      ],
+      "fees": "",
+      "walk": "庭園を歩く",
+      "cycle": "自転車＋徒歩",
+      "rail": "車アクセス中心",
+      "access": "原駅 → 多治見市虎渓山町の永保寺案内所方面。",
+      "routeDestination": "永保寺案内所 岐阜県多治見市虎渓山町5丁目11",
+      "arrival": "永保寺案内所",
+      "coordinates": {
+        "lat": 35.3468154,
+        "lon": 137.1306803
+      },
+      "exclusionReason": "庭園・建築の鑑賞が中心の候補。今回の30景では森、山道、田園の比重を上げるため除外。",
+      "researchFacts": [
+        "寺公式は所在地1丁目40と、車での到着先案内所5丁目11を区別している。",
+        "国指定名勝の庭園。"
+      ],
+      "searchQuery": "\"永保寺\" 庭園 公式 住所",
+      "checkedOn": "2026-10-07",
+      "origin": "原駅 愛知県名古屋市天白区",
+      "travel": {
+        "walk": true,
+        "cycle": false,
+        "rail": false
+      },
+      "coordinateSource": "https://kokeizan.or.jp/pages/4/",
+      "routeEndpointSource": "https://kokeizan.or.jp/pages/4/",
+      "verifiedMapCoordinates": [
+        {
+          "lat": 35.3468154,
+          "lon": 137.1306803,
+          "type": "official-embed-marker"
+        }
+      ],
+      "coordinateBasis": "公式ページの埋め込み地図。地形を示す点であり、自動車到着は到着先住所と道路沿いの入口を用いる。"
+    },
+    {
+      "id": "enakyo",
+      "selected": false,
+      "name": "恵那峡",
+      "reading": "えなきょう",
+      "city": "恵那市",
+      "district": "大井町",
+      "area": "tono",
+      "category": "lake",
+      "address": "岐阜県恵那市大井町恵那峡",
+      "summary": "木曽川をせき止めてできた湖と岩の岸辺。",
+      "description": "大井ダムによりできた湖。両岸に奇岩があり、広場と遊歩道が整備されています。",
+      "source": "https://www.kankou-gifu.jp/spot/detail_1341.html",
+      "extraSources": [
+        "https://www.city.ena.lg.jp/ena_shokai/5699.html"
+      ],
+      "fees": "",
+      "walk": "湖畔散策",
+      "cycle": "自転車＋徒歩",
+      "rail": "電車＋バス",
+      "access": "原駅 → JR恵那駅 → 東鉄バス・恵那峡。",
+      "routeDestination": "恵那峡 岐阜県恵那市大井町恵那峡",
+      "arrival": "恵那峡・湖畔",
+      "coordinates": {
+        "lat": 35.480827,
+        "lon": 137.406756
+      },
+      "exclusionReason": "県公式でも主要観光地として紹介され、広場等が2020年に改修された湖畔。今回の30景では山間部の森林景観を優先。",
+      "researchFacts": [
+        "自然湖ではなく大井ダムによる人造湖。",
+        "恵那駅から恵那峡行きバス。"
+      ],
+      "searchQuery": "\"恵那峡\" 公式 住所",
+      "checkedOn": "2026-10-07",
+      "origin": "原駅 愛知県名古屋市天白区",
+      "travel": {
+        "walk": true,
+        "cycle": false,
+        "rail": false
+      },
+      "coordinateSource": "https://www.kankou-gifu.jp/spot/detail_1341.html",
+      "routeEndpointSource": "https://www.kankou-gifu.jp/spot/detail_1341.html",
+      "verifiedMapCoordinates": [
+        {
+          "lat": 35.480827,
+          "lon": 137.406756,
+          "type": "official-embed-marker"
+        }
+      ],
+      "coordinateBasis": "公式ページの埋め込み地図。地形を示す点であり、自動車到着は到着先住所と道路沿いの入口を用いる。"
+    },
+    {
+      "id": "yoro",
+      "selected": false,
+      "name": "養老の滝",
+      "reading": "ようろうのたき",
+      "city": "養老町",
+      "district": "養老公園",
+      "area": "seino",
+      "category": "water",
+      "address": "岐阜県養老郡養老町高林1298-2（養老公園）",
+      "summary": "養老山麓の谷を流れる滝。",
+      "description": "養老公園の谷沿いの道を上って訪れる、日本の滝百選の滝です。",
+      "source": "https://www.kankou-gifu.jp/spot/detail_903.html",
+      "extraSources": [
+        "https://www.town.yoro.gifu.jp/tourism/sightseeing/1002041.html",
+        "https://www.yoro-park.com/guide/faq/"
+      ],
+      "fees": "",
+      "walk": "滝への坂道",
+      "cycle": "自転車＋徒歩",
+      "rail": "電車＋徒歩",
+      "access": "原駅 → JR大垣駅 → 養老鉄道・養老駅 → 滝まで徒歩約50分。",
+      "routeDestination": "養老公園 岐阜県養老郡養老町高林1298-2",
+      "arrival": "養老公園・谷沿いの散策入口",
+      "coordinates": {
+        "lat": 35.283322,
+        "lon": 136.550531
+      },
+      "exclusionReason": "養老町の代表的な観光スポット。滝の候補は山間部の森に近い場所を優先して構成を分散した。",
+      "researchFacts": [
+        "県公式掲載住所は養老公園。滝そのものの番地と同一視しない。",
+        "養老駅から滝まで徒歩50分。"
+      ],
+      "searchQuery": "\"養老の滝\" 公式 住所",
+      "checkedOn": "2026-10-07",
+      "origin": "原駅 愛知県名古屋市天白区",
+      "travel": {
+        "walk": true,
+        "cycle": false,
+        "rail": false
+      },
+      "coordinateSource": "https://www.kankou-gifu.jp/spot/detail_903.html",
+      "routeEndpointSource": "https://www.kankou-gifu.jp/spot/detail_903.html",
+      "verifiedMapCoordinates": [
+        {
+          "lat": 35.283322,
+          "lon": 136.550531,
+          "type": "official-embed-marker"
+        }
+      ],
+      "coordinateBasis": "公式ページの埋め込み地図。地形を示す点であり、自動車到着は到着先住所と道路沿いの入口を用いる。"
+    },
+    {
+      "id": "dachiboku",
+      "selected": false,
+      "name": "達目洞",
+      "reading": "だちぼくぼら",
+      "city": "岐阜市",
+      "district": "達目洞",
+      "area": "gifu",
+      "category": "forest",
+      "address": "岐阜県岐阜市達目洞",
+      "summary": "金華山の東麓に残る、湧水の里山。",
+      "description": "逆川の水辺と里山が残り、ヒメコウホネなどの湿性植物が生育する地区です。",
+      "source": "https://www.pref.gifu.lg.jp/page/527.html",
+      "extraSources": [
+        "https://www.city.gifu.lg.jp/info/syoukai/1006154/1006164/1006165.html",
+        "https://www.city.gifu.lg.jp/kurashi/kankyo/1010761/1002983/1003007.html"
+      ],
+      "fees": "",
+      "walk": "里山・水辺歩き",
+      "cycle": "現地ライド候補",
+      "rail": "電車＋バス",
+      "access": "原駅 → 岐阜市方面 → 岐阜バス・日野鈴虫または日野本郷 → 徒歩約15分。",
+      "routeDestination": "達目洞 岐阜県岐阜市達目洞",
+      "arrival": "達目洞・逆川周辺",
+      "coordinates": null,
+      "exclusionReason": "景観の事実と自然観察経路は確認できるが、今回の写真中心UIに使える撮影地確認済みの許諾写真を確保できなかった。",
+      "researchFacts": [
+        "金華山東山麓。平成の名水百選・逆川上流。",
+        "県の所在地表記は岐阜市達目洞まで。"
+      ],
+      "searchQuery": "\"達目洞\" 公式 岐阜 森",
+      "checkedOn": "2026-10-07",
+      "origin": "原駅 愛知県名古屋市天白区",
+      "travel": {
+        "walk": true,
+        "cycle": false,
+        "rail": false
+      },
+      "coordinateSource": "https://www.pref.gifu.lg.jp/page/527.html",
+      "routeEndpointSource": "https://www.pref.gifu.lg.jp/page/527.html"
+    },
+    {
+      "id": "amou",
+      "name": "天生湿原",
+      "reading": "あもうしつげん",
+      "city": "飛騨市",
+      "district": "河合町天生",
+      "area": "hida",
+      "category": "forest",
+      "source": "https://www.hida-kankou.jp/spot/276",
+      "extraSources": [
+        "https://www.city.hida.gifu.jp/soshiki/45/87565.html",
+        "https://hidamoriaruki.com/map/amou/",
+        "https://www.hida-kankou.jp/features/116"
+      ],
+      "address": "岐阜県飛騨市河合町天生",
+      "summary": "木道の湿原と、奥に続くブナ林。",
+      "description": "天生峠の登山口から山道を登ると湿原の木道に出る。湿原の周囲と奥のブナ林を歩くコースがある。",
+      "access": "国道360号の天生峠登山口へ車でアクセス。登山口から湿原は徒歩。",
+      "travel": {
+        "walk": "登山",
+        "cycle": "自転車＋徒歩",
+        "rail": "車アクセス中心"
+      },
+      "selected": true,
+      "fees": [
+        {
+          "label": "森林環境整備推進協力金",
+          "amount": 500,
+          "unit": "円／人",
+          "source": "https://hidamoriaruki.com/map/amou/"
+        }
+      ],
+      "origin": "原駅（愛知県名古屋市天白区）",
+      "researchedAt": "2026-10-07",
+      "selectionReason": "森、水辺、田園の実景と、公開された到着地点の案内を掲載できるため。",
+      "sourceMapEvidence": {
+        "mapCoordinates": [
+          [
+            36.2580473,
+            136.9635487
+          ]
+        ],
+        "mapLinks": [
+          "https://www.google.com/maps/embed/v1/place?key=REMOVED&q=36.2580473,136.9635487&center=36.2580473,136.9635487&zoom=12"
+        ]
+      },
+      "verified_at": "2026-10-07",
+      "humanSources": [
+        "https://note.com/nagnai/n/n60ecb99cbf0c"
+      ],
+      "researchNotes": [
+        "国道360号飛騨市側は2026-10-06 11:00に通行止め解除。市公式更新で確認。"
+      ],
+      "coords": [
+        36.257866,
+        136.963699
+      ],
+      "arrival": {
+        "lat": 36.257866,
+        "lon": 136.963699,
+        "name": "天生峠登山口・駐車場",
+        "address": "岐阜県飛騨市河合町天生",
+        "source": "https://hidamoriaruki.com/map/amou/",
+        "basis": "公式案内が登山口駐車場を指定。観光協会の地図とOSM駐車場・国道360号を照合。"
+      },
+      "routeDestination": "天生峠登山口・駐車場 岐阜県飛騨市河合町天生",
+      "travelReasons": {
+        "walk": "森・湿原・集落の道を歩いて風景を見る。",
+        "cycle": "道路で移動し、現地の散策路は徒歩。",
+        "rail": "車で現地へ移動し、現地では徒歩。"
+      },
+      "coordinates": {
+        "lat": 36.257866,
+        "lon": 136.963699
+      },
+      "routeEndpoint": "天生峠登山口・駐車場"
+    },
+    {
+      "id": "tanekura",
+      "name": "種蔵の棚田と板倉",
+      "reading": "たねくらのたなだといたくら",
+      "city": "飛騨市",
+      "district": "宮川町種蔵",
+      "area": "hida",
+      "category": "rural",
+      "source": "https://www.hida-kankou.jp/spot/277",
+      "extraSources": [
+        "https://www.city.hida.gifu.jp/soshiki/46/tanekura-cal.html",
+        "https://www.hida-kankou.jp/plan/637",
+        "https://www.city.hida.gifu.jp/soshiki/46/tanekura0.html",
+        "https://www.maff.go.jp/tokai/noson/chiiki/tanada/attach/pdf/meguri-3.pdf"
+      ],
+      "address": "岐阜県飛騨市宮川町種蔵37-2（種蔵駐車場）",
+      "summary": "石積みの棚田と、畑の中に残る板倉。",
+      "description": "山の斜面に棚田が続き、田畑の間に木造の板倉が点在する。集落の道から、石積みと家々をまとめて眺められる。",
+      "access": "集落入口の駐車場を起点に徒歩。JR坂上駅からは車で約15分。",
+      "travel": {
+        "walk": "徒歩旅おすすめ",
+        "cycle": "サイクリングライドおすすめ",
+        "rail": "車アクセス中心"
+      },
+      "selected": true,
+      "fees": [],
+      "origin": "原駅（愛知県名古屋市天白区）",
+      "researchedAt": "2026-10-07",
+      "selectionReason": "森、水辺、田園の実景と、公開された到着地点の案内を掲載できるため。",
+      "sourceMapEvidence": {
+        "mapCoordinates": [
+          [
+            36.3389146,
+            137.2079475
+          ]
+        ],
+        "mapLinks": [
+          "https://www.google.com/maps/embed/v1/place?key=REMOVED&q=36.3389146,137.2079475&center=36.3389146,137.2079475&zoom=13"
+        ]
+      },
+      "verified_at": "2026-10-07",
+      "coords": [
+        36.347901,
+        137.185388
+      ],
+      "arrival": {
+        "lat": 36.347901,
+        "lon": 137.185388,
+        "name": "種蔵駐車場",
+        "address": "岐阜県飛騨市宮川町種蔵37-2（種蔵駐車場）",
+        "source": "https://www.hida-kankou.jp/plan/637",
+        "coordinateSource": "https://tanekura.com/access.html",
+        "basis": "公式ガイドウォークは種蔵駐車場を種蔵37-2と指定。同番地の市指定管理施設運営者のアクセス地図data-llz=36.347901,137.185388。OSM集落道路を照合。元の公式スポットマーカーは集落の東約2kmのため使用しない。"
+      },
+      "routeDestination": "種蔵駐車場 岐阜県飛騨市宮川町種蔵37-2（種蔵駐車場）",
+      "travelReasons": {
+        "walk": "棚田と板倉の間を集落の道で巡れる。",
+        "cycle": "集落を結ぶ道路から田畑と山の斜面を見られる。",
+        "rail": "JR坂上駅から車で約15分という公式アクセス。"
+      },
+      "coordinates": {
+        "lat": 36.347901,
+        "lon": 137.185388
+      },
+      "routeEndpoint": "種蔵駐車場"
+    },
+    {
+      "id": "ikegahara",
+      "name": "池ケ原湿原",
+      "reading": "いけがはらしつげん",
+      "city": "飛騨市",
+      "district": "宮川町洞",
+      "area": "hida",
+      "category": "forest",
+      "source": "https://www.hida-kankou.jp/spot/287",
+      "extraSources": [
+        "https://hidamoriaruki.com/map/ikegahara/",
+        "https://www.hida-kankou.jp/features/115"
+      ],
+      "address": "岐阜県飛騨市宮川町洞",
+      "summary": "森の中の湿原を、木道で一周。",
+      "description": "山林に囲まれた湿原に木道が通っている。春にはミズバショウとリュウキンカが咲き、夏には草の緑が広がる。",
+      "access": "国道360号の塩屋トンネルから洞数河線を約11km。湿原の駐車場から木道へ。",
+      "travel": {
+        "walk": "徒歩旅おすすめ",
+        "cycle": "自転車＋徒歩",
+        "rail": "車アクセス中心"
+      },
+      "selected": true,
+      "fees": [],
+      "origin": "原駅（愛知県名古屋市天白区）",
+      "researchedAt": "2026-10-07",
+      "selectionReason": "森、水辺、田園の実景と、公開された到着地点の案内を掲載できるため。",
+      "sourceMapEvidence": {
+        "mapCoordinates": [
+          [
+            36.36601,
+            137.236662
+          ]
+        ],
+        "mapLinks": [
+          "https://www.google.com/maps/embed/v1/place?key=REMOVED&q=36.36601,137.236662&center=36.36601,137.236662&zoom=14"
+        ]
+      },
+      "verified_at": "2026-10-07",
+      "coords": [
+        36.366511,
+        137.237198
+      ],
+      "arrival": {
+        "lat": 36.366511,
+        "lon": 137.237198,
+        "name": "池ケ原湿原駐車場",
+        "address": "岐阜県飛騨市宮川町洞",
+        "source": "https://hidamoriaruki.com/map/ikegahara/",
+        "basis": "公式車アクセスのGoogle Maps経路の最終to座標。湿原中央の観光マーカーを車の到着先にしない。"
+      },
+      "routeDestination": "池ケ原湿原駐車場 岐阜県飛騨市宮川町洞",
+      "travelReasons": {
+        "walk": "森・湿原・集落の道を歩いて風景を見る。",
+        "cycle": "道路で移動し、現地の散策路は徒歩。",
+        "rail": "車で現地へ移動し、現地では徒歩。"
+      },
+      "coordinates": {
+        "lat": 36.366511,
+        "lon": 137.237198
+      },
+      "routeEndpoint": "池ケ原湿原駐車場"
+    },
+    {
+      "id": "nishiure",
+      "name": "西ウレ峠",
+      "reading": "にしうれとうげ",
+      "city": "高山市",
+      "district": "清見町楢谷",
+      "area": "hida",
+      "category": "forest",
+      "source": "https://www.hidatakayama.or.jp/spot/detail_1518.html",
+      "extraSources": [],
+      "address": "岐阜県高山市清見町楢谷",
+      "summary": "せせらぎ街道の峠と、池を囲む広葉樹林。",
+      "description": "標高1,113mの西ウレ峠は、せせらぎ街道の最高地点。道路沿いにブナやミズナラの森があり、池の周りの道を歩ける。",
+      "access": "せせらぎ街道の西ウレ峠駐車場へ車。池周辺は徒歩。",
+      "travel": {
+        "walk": "徒歩旅おすすめ",
+        "cycle": "自転車＋徒歩",
+        "rail": "車アクセス中心"
+      },
+      "selected": true,
+      "fees": [],
+      "origin": "原駅（愛知県名古屋市天白区）",
+      "researchedAt": "2026-10-07",
+      "selectionReason": "森、水辺、田園の実景と、公開された到着地点の案内を掲載できるため。",
+      "sourceMapEvidence": {
+        "mapCoordinates": [
+          [
+            36.02630852879381,
+            137.071166619721
+          ],
+          [
+            36.02630852879381,
+            137.071166619721
+          ]
+        ],
+        "mapLinks": [
+          "https://www.google.com/maps/embed/v1/place?key=REMOVED&q=36.02630852879381,137.071166619721&zoom=15"
+        ]
+      },
+      "verified_at": "2026-10-07",
+      "coords": [
+        36.02630852879381,
+        137.071166619721
+      ],
+      "arrival": {
+        "lat": 36.02630852879381,
+        "lon": 137.071166619721,
+        "name": "西ウレ峠駐車場付近",
+        "address": "岐阜県高山市清見町楢谷",
+        "source": "https://www.hidatakayama.or.jp/spot/detail_1518.html",
+        "basis": "観光協会地図の地点。OSMの県道73号・西ウレ峠と照合。"
+      },
+      "routeDestination": "西ウレ峠駐車場付近 岐阜県高山市清見町楢谷",
+      "travelReasons": {
+        "walk": "森・湿原・集落の道を歩いて風景を見る。",
+        "cycle": "道路で移動し、現地の散策路は徒歩。",
+        "rail": "車で現地へ移動し、現地では徒歩。"
+      },
+      "coordinates": {
+        "lat": 36.02630852879381,
+        "lon": 137.071166619721
+      },
+      "routeEndpoint": "西ウレ峠駐車場付近"
+    },
+    {
+      "id": "yamanomura",
+      "name": "山之村",
+      "reading": "やまのむら",
+      "city": "飛騨市",
+      "district": "神岡町森茂",
+      "area": "hida",
+      "category": "rural",
+      "source": "https://www.hida-kankou.jp/features/162",
+      "extraSources": [],
+      "address": "岐阜県飛騨市神岡町森茂",
+      "summary": "標高約1,000mにある集落の田畑と道。",
+      "description": "山之村は七つの集落の総称。山に囲まれた田畑と家々が広がり、森茂地区の道路からも山里の風景を見られる。",
+      "access": "国道471号から山吹峠を越え、森茂地区へ車。集落の道を歩く。",
+      "travel": {
+        "walk": "徒歩旅おすすめ",
+        "cycle": "サイクリングライドおすすめ",
+        "rail": "車アクセス中心"
+      },
+      "selected": true,
+      "fees": [],
+      "origin": "原駅（愛知県名古屋市天白区）",
+      "researchedAt": "2026-10-07",
+      "selectionReason": "森、水辺、田園の実景と、公開された到着地点の案内を掲載できるため。",
+      "sourceMapEvidence": {
+        "mapCoordinates": [],
+        "mapLinks": []
+      },
+      "verified_at": "2026-10-07",
+      "coords": [
+        36.3675787,
+        137.3773306
+      ],
+      "arrival": {
+        "lat": 36.3675787,
+        "lon": 137.3773306,
+        "name": "山之村・森茂地区の道路",
+        "address": "岐阜県飛騨市神岡町森茂",
+        "source": "https://www.hida-kankou.jp/spot/343",
+        "basis": "公式天蓋山登山口の森茂地区地図に隣接する緑資源幹線林道高山大山線の道路ノード。OSM way172433004。集落内の公開道路を到着先とし、宿泊施設や農地の敷地を指定しない。"
+      },
+      "routeDestination": "森茂地区 岐阜県飛騨市神岡町森茂",
+      "travelReasons": {
+        "walk": "集落の道路から田畑と家々を眺める。",
+        "cycle": "山に囲まれた集落を結ぶ道路の景観が続く。",
+        "rail": "車で現地へ移動し、現地では徒歩。"
+      },
+      "coordinates": {
+        "lat": 36.3675787,
+        "lon": 137.3773306
+      },
+      "routeEndpoint": "山之村・森茂地区の道路"
+    },
+    {
+      "id": "utsue",
+      "name": "宇津江四十八滝",
+      "reading": "うつえしじゅうはったき",
+      "city": "高山市",
+      "district": "国府町宇津江",
+      "area": "hida",
+      "category": "water",
+      "source": "https://www.hidatakayama.or.jp/spot/detail_1602.html",
+      "extraSources": [
+        "https://www.48taki.com/information.html",
+        "https://www.pref.gifu.lg.jp/page/7372.html"
+      ],
+      "address": "岐阜県高山市国府町宇津江3235-86",
+      "summary": "森の斜面を登りながら、十三の滝をたどる。",
+      "description": "四十八滝川の谷に十三の滝が続く。登り口から遊歩道を進むと、水の流れと滝を木々の間から見られる。",
+      "access": "宇津江四十八滝の駐車場へ車。滝の登り口から遊歩道を徒歩。",
+      "travel": {
+        "walk": "徒歩旅おすすめ",
+        "cycle": "自転車＋徒歩",
+        "rail": "車アクセス中心"
+      },
+      "selected": true,
+      "fees": [
+        {
+          "label": "協力金・大人",
+          "amount": 200,
+          "unit": "円／人",
+          "source": "https://www.hidatakayama.or.jp/spot/detail_1602.html"
+        },
+        {
+          "label": "協力金・子供",
+          "amount": 100,
+          "unit": "円／人",
+          "source": "https://www.hidatakayama.or.jp/spot/detail_1602.html"
+        }
+      ],
+      "origin": "原駅（愛知県名古屋市天白区）",
+      "researchedAt": "2026-10-07",
+      "selectionReason": "森、水辺、田園の実景と、公開された到着地点の案内を掲載できるため。",
+      "sourceMapEvidence": {
+        "mapCoordinates": [
+          [
+            36.1968556,
+            137.1571278
+          ],
+          [
+            36.1968556,
+            137.1571278
+          ],
+          [
+            36.1968556,
+            137.1571278
+          ]
+        ],
+        "mapLinks": [
+          "https://www.google.com/maps/place/%E5%AE%87%E6%B4%A5%E6%B1%9F%E5%9B%9B%E5%8D%81%E5%85%AB%E6%BB%9D/@36.1968599,137.1545529,17z/data=!4m8!3m7!1s0x6002a1bfeea2f531:0x7e17afe1207072ae!8m2!3d36.1968556!4d137.1571278!9m1!1b1!16s%2Fg%2F1227d3vw?authuser=0&entry=ttu&g_ep=EgoyMDI1MDUxMS4wIKXMDSoASAFQAw%3D%3D",
+          "https://www.google.com/maps/embed/v1/place?key=REMOVED&q=36.1968556,137.1571278&zoom=15"
+        ]
+      },
+      "verified_at": "2026-10-07",
+      "humanSources": [
+        "https://note.com/yanotatsuya/n/nd94321b3cceb",
+        "https://note.com/emiemibrightness/n/nfb228a73ef35"
+      ],
+      "coords": [
+        36.1968556,
+        137.1571278
+      ],
+      "arrival": {
+        "lat": 36.1968556,
+        "lon": 137.1571278,
+        "name": "宇津江四十八滝・登り口付近",
+        "address": "岐阜県高山市国府町宇津江3235-86",
+        "source": "https://www.hidatakayama.or.jp/spot/detail_1602.html",
+        "basis": "観光協会地図の地点は県道479号の終端付近で、OSM道路から約35m。山奥の滝や山頂の座標ではない。"
+      },
+      "routeDestination": "宇津江四十八滝・登り口付近 岐阜県高山市国府町宇津江3235-86",
+      "travelReasons": {
+        "walk": "森・湿原・集落の道を歩いて風景を見る。",
+        "cycle": "道路で移動し、現地の散策路は徒歩。",
+        "rail": "車で現地へ移動し、現地では徒歩。"
+      },
+      "coordinates": {
+        "lat": 36.1968556,
+        "lon": 137.1571278
+      },
+      "routeEndpoint": "宇津江四十八滝・登り口付近"
+    },
+    {
+      "id": "hiwada",
+      "name": "日和田高原",
+      "reading": "ひわだこうげん",
+      "city": "高山市",
+      "district": "高根町日和田",
+      "area": "hida",
+      "category": "rural",
+      "source": "https://www.hidatakayama.or.jp/hidatakane/spot/detail_1455.html",
+      "extraSources": [
+        "https://www.hidatakayama.or.jp/event/detail_2453.html",
+        "https://www.hidatakayama.or.jp/special/detail_81.html"
+      ],
+      "address": "岐阜県高山市高根町日和田",
+      "summary": "御嶽山北側の高原に続く田畑と白樺。",
+      "description": "御嶽山北側に広がる高原。田畑や白樺の林が続き、日和田地区の道から山並みを眺められる。",
+      "access": "国道361号から県道435号で日和田地区へ。地区内の道路を起点に散策。",
+      "travel": {
+        "walk": "徒歩旅おすすめ",
+        "cycle": "サイクリングライドおすすめ",
+        "rail": "車アクセス中心"
+      },
+      "selected": true,
+      "fees": [],
+      "origin": "原駅（愛知県名古屋市天白区）",
+      "researchedAt": "2026-10-07",
+      "selectionReason": "森、水辺、田園の実景と、公開された到着地点の案内を掲載できるため。",
+      "sourceMapEvidence": {
+        "mapCoordinates": [],
+        "mapLinks": []
+      },
+      "verified_at": "2026-10-07",
+      "coords": [
+        36.0013053,
+        137.5334375
+      ],
+      "arrival": {
+        "lat": 36.0013053,
+        "lon": 137.5334375,
+        "name": "日和田集落の道路",
+        "address": "岐阜県高山市高根町日和田",
+        "source": "https://www.hidatakayama.or.jp/event/detail_2453.html",
+        "basis": "公式石仏めぐり地図の地点から約55mのOSM公道。道路ノードを用い、学校敷地へ誘導しない。"
+      },
+      "routeDestination": "日和田集落の道路 岐阜県高山市高根町日和田",
+      "travelReasons": {
+        "walk": "森・湿原・集落の道を歩いて風景を見る。",
+        "cycle": "集落を結ぶ道路の景観を巡る。",
+        "rail": "最寄り駅から車利用を組み合わせる公式アクセス。"
+      },
+      "coordinates": {
+        "lat": 36.0013053,
+        "lon": 137.5334375
+      },
+      "routeEndpoint": "日和田集落の道路"
+    },
+    {
+      "id": "gandate",
+      "name": "巌立峡・三ツ滝",
+      "reading": "がんだてきょう・みつだき",
+      "city": "下呂市",
+      "district": "小坂町落合",
+      "area": "hida",
+      "category": "water",
+      "source": "https://www.gero-spa.com/spot/detail_26.html",
+      "extraSources": [
+        "https://www.osaka-taki.com/",
+        "https://hidaosaka-kanko.com/news/2026092052/takimibashi-20260919/"
+      ],
+      "address": "岐阜県下呂市小坂町落合",
+      "summary": "溶岩の岩壁と、谷の奥にある三ツ滝。",
+      "description": "御嶽山の噴火でできた溶岩の岩壁が川沿いに立つ。がんだて公園から三ツ滝の滝見橋まで歩ける。",
+      "access": "がんだて公園の駐車場へ車。三ツ滝の滝見橋へ徒歩約5分。",
+      "travel": {
+        "walk": "徒歩旅おすすめ",
+        "cycle": "自転車＋徒歩",
+        "rail": "車アクセス中心"
+      },
+      "selected": true,
+      "fees": [
+        {
+          "label": "環境維持協力金",
+          "amount": 500,
+          "unit": "円／人",
+          "source": "https://www.osaka-taki.com/"
+        }
+      ],
+      "origin": "原駅（愛知県名古屋市天白区）",
+      "researchedAt": "2026-10-07",
+      "selectionReason": "森、水辺、田園の実景と、公開された到着地点の案内を掲載できるため。",
+      "sourceMapEvidence": {
+        "mapCoordinates": [
+          [
+            35.9140617210743,
+            137.330367565155
+          ]
+        ],
+        "mapLinks": [
+          "https://maps.google.co.jp/maps?ll=35.9140617210743,137.330367565155&q=巌立峡(がんだて公園) がんだてきょう 下呂市小坂町落合&hl=ja&output=embed&t=m&z=16"
+        ]
+      },
+      "verified_at": "2026-10-07",
+      "researchNotes": [
+        "三ツ滝滝見橋までの遊歩道を案内。あかがねとよ方面への通行は掲載しない。"
+      ],
+      "coords": [
+        35.9140617210743,
+        137.330367565155
+      ],
+      "arrival": {
+        "lat": 35.9140617210743,
+        "lon": 137.330367565155,
+        "name": "がんだて公園駐車場",
+        "address": "岐阜県下呂市小坂町落合",
+        "source": "https://www.gero-spa.com/spot/detail_26.html",
+        "basis": "観光協会の地図と公園へのアクセス案内による。"
+      },
+      "routeDestination": "がんだて公園駐車場 岐阜県下呂市小坂町落合",
+      "travelReasons": {
+        "walk": "森・湿原・集落の道を歩いて風景を見る。",
+        "cycle": "道路で移動し、現地の散策路は徒歩。",
+        "rail": "車で現地へ移動し、現地では徒歩。"
+      },
+      "coordinates": {
+        "lat": 35.9140617210743,
+        "lon": 137.330367565155
+      },
+      "routeEndpoint": "がんだて公園駐車場"
+    },
+    {
+      "id": "hakusui",
+      "name": "白水湖",
+      "reading": "はくすいこ",
+      "city": "白川村",
+      "district": "平瀬・大白川",
+      "area": "hida",
+      "category": "lake",
+      "source": "https://www.kankou-gifu.jp/spot/detail_3217.html",
+      "extraSources": [
+        "https://www.vill.shirakawa.lg.jp/2918.htm"
+      ],
+      "address": "岐阜県大野郡白川村平瀬字大白川国有林",
+      "summary": "白山の山麓にある青緑色の湖。",
+      "description": "大白川園地に隣接する人工湖。湖の周囲をブナやミズナラの森が囲み、園地側から水面と山の斜面を眺められる。",
+      "access": "国道156号から県道451号を約13km。大白川園地の駐車場を起点に徒歩。",
+      "travel": {
+        "walk": "徒歩旅おすすめ",
+        "cycle": "自転車＋徒歩",
+        "rail": "車アクセス中心"
+      },
+      "selected": true,
+      "fees": [],
+      "origin": "原駅（愛知県名古屋市天白区）",
+      "researchedAt": "2026-10-07",
+      "selectionReason": "森、水辺、田園の実景と、公開された到着地点の案内を掲載できるため。",
+      "sourceMapEvidence": {
+        "mapCoordinates": [
+          [
+            36.143489,
+            136.821027
+          ]
+        ],
+        "mapLinks": [
+          "https://www.google.com/maps/embed/v1/place?key=REMOVED&q=36.143489,136.821027&zoom=15"
+        ]
+      },
+      "verified_at": "2026-10-07",
+      "researchNotes": [
+        "白川村2026-09-29更新で県道451号は2026-10-01から開通、白水滝・白水湖は見学可と明記。白山平瀬道の登山は別条件のため案内しない。"
+      ],
+      "coords": [
+        36.143489,
+        136.821027
+      ],
+      "arrival": {
+        "lat": 36.143489,
+        "lon": 136.821027,
+        "name": "大白川園地駐車場",
+        "address": "岐阜県大野郡白川村平瀬字大白川国有林",
+        "source": "https://www.kankou-gifu.jp/spot/detail_3217.html",
+        "basis": "県観光地図の地点。OSM parking way1125827982と約6m、県道451号終端の公開園地駐車場。湖水面・ダム進入路を到着先にしない。"
+      },
+      "routeDestination": "大白川園地駐車場 岐阜県大野郡白川村平瀬字大白川国有林",
+      "travelReasons": {
+        "walk": "森・湿原・集落の道を歩いて風景を見る。",
+        "cycle": "道路で移動し、現地の散策路は徒歩。",
+        "rail": "車で現地へ移動し、現地では徒歩。"
+      },
+      "coordinates": {
+        "lat": 36.143489,
+        "lon": 136.821027
+      },
+      "routeEndpoint": "大白川園地駐車場"
+    },
+    {
+      "id": "menodaki",
+      "name": "女男滝",
+      "reading": "めおとだき",
+      "city": "高山市",
+      "district": "久々野町渚",
+      "area": "hida",
+      "category": "water",
+      "source": "https://www.hidatakayama.or.jp/spot/detail_1552.html",
+      "extraSources": [
+        "https://www.city.takayama.lg.jp/shisetsu/1004139/1000036/1001623.html"
+      ],
+      "address": "岐阜県高山市久々野町渚1065番地",
+      "summary": "木々の間を上下二段に流れる滝。",
+      "description": "牛牧谷にかかる二段の滝。上の女滝と下の男滝を、周囲の木々と一緒に眺められる。",
+      "access": "JR久々野駅から車で約20分。女男滝公園を起点に徒歩。",
+      "travel": {
+        "walk": "徒歩旅おすすめ",
+        "cycle": "自転車＋徒歩",
+        "rail": "車アクセス中心"
+      },
+      "selected": true,
+      "fees": [
+        {
+          "label": "見学",
+          "amount": 0,
+          "unit": "円",
+          "source": "https://www.hidatakayama.or.jp/spot/detail_1552.html"
+        }
+      ],
+      "origin": "原駅（愛知県名古屋市天白区）",
+      "researchedAt": "2026-10-07",
+      "selectionReason": "森、水辺、田園の実景と、公開された到着地点の案内を掲載できるため。",
+      "sourceMapEvidence": {
+        "mapCoordinates": [
+          [
+            35.992122,
+            137.275463
+          ],
+          [
+            35.992122,
+            137.275463
+          ]
+        ],
+        "mapLinks": [
+          "https://www.google.com/maps/embed/v1/place?key=REMOVED&q=35.992122,137.275463&zoom=15"
+        ]
+      },
+      "verified_at": "2026-10-07",
+      "coords": [
+        35.9920766,
+        137.276004
+      ],
+      "arrival": {
+        "lat": 35.9920766,
+        "lon": 137.276004,
+        "name": "女男滝公園入口付近",
+        "address": "岐阜県高山市久々野町渚1068番地（女男滝公園）",
+        "source": "https://www.city.takayama.lg.jp/shisetsu/1004139/1000036/1001623.html",
+        "basis": "滝の観光マーカーから約49mの既存道路。国道41号バイパスではなく、公園に接する旧道側を選んだ。"
+      },
+      "routeDestination": "女男滝公園入口付近 岐阜県高山市久々野町渚1068番地（女男滝公園）",
+      "travelReasons": {
+        "walk": "森・湿原・集落の道を歩いて風景を見る。",
+        "cycle": "道路で移動し、現地の散策路は徒歩。",
+        "rail": "最寄り駅から車利用を組み合わせる公式アクセス。"
+      },
+      "coordinates": {
+        "lat": 35.9920766,
+        "lon": 137.276004
+      },
+      "routeEndpoint": "女男滝公園入口付近"
+    },
+    {
+      "id": "miboro",
+      "name": "御母衣湖",
+      "reading": "みぼろこ",
+      "city": "高山市",
+      "district": "荘川町中野",
+      "area": "hida",
+      "category": "lake",
+      "source": "https://www.hidatakayama.or.jp/spot/detail_1412.html",
+      "extraSources": [
+        "https://www.city.takayama.lg.jp/shisetsu/1004139/1000036/1001612.html",
+        "https://www.hidatakayama.or.jp/hidashokawa/spot/detail_1411.html"
+      ],
+      "address": "岐阜県高山市荘川町中野770番地1（荘川桜公園）",
+      "summary": "国道156号沿いに広がる湖と山の斜面。",
+      "description": "庄川をせき止めてできた湖。高山市側の荘川桜公園から湖を眺め、国道156号沿いの山林と水面の風景をたどれる。",
+      "access": "国道156号の荘川桜公園駐車場へ車。公園内から湖を眺める。",
+      "travel": {
+        "walk": "徒歩旅おすすめ",
+        "cycle": "自転車＋徒歩",
+        "rail": "車アクセス中心"
+      },
+      "selected": true,
+      "fees": [
+        {
+          "label": "荘川桜公園入園",
+          "amount": 0,
+          "unit": "円",
+          "source": "https://www.city.takayama.lg.jp/shisetsu/1004139/1000036/1001612.html"
+        }
+      ],
+      "origin": "原駅（愛知県名古屋市天白区）",
+      "researchedAt": "2026-10-07",
+      "selectionReason": "森、水辺、田園の実景と、公開された到着地点の案内を掲載できるため。",
+      "sourceMapEvidence": {
+        "mapCoordinates": [
+          [
+            36.138228,
+            136.910369
+          ],
+          [
+            36.138228,
+            136.910369
+          ]
+        ],
+        "mapLinks": [
+          "https://www.google.com/maps/embed/v1/place?key=REMOVED&q=36.138228,136.910369&zoom=15"
+        ]
+      },
+      "verified_at": "2026-10-07",
+      "coords": [
+        36.0906437,
+        136.9380288
+      ],
+      "arrival": {
+        "lat": 36.0906437,
+        "lon": 136.9380288,
+        "name": "荘川桜公園駐車場",
+        "address": "岐阜県高山市荘川町中野770番地1（荘川桜公園）",
+        "source": "https://www.hidatakayama.or.jp/hidashokawa/spot/detail_1411.html",
+        "basis": "高山市施設案内の住所と観光協会の荘川桜公園地図を照合。OSM parking node305586668。御母衣ダム堤体の地図マーカーは使わない。"
+      },
+      "routeDestination": "荘川桜公園駐車場 岐阜県高山市荘川町中野770番地1（荘川桜公園）",
+      "travelReasons": {
+        "walk": "森・湿原・集落の道を歩いて風景を見る。",
+        "cycle": "道路で移動し、現地の散策路は徒歩。",
+        "rail": "車で現地へ移動し、現地では徒歩。"
+      },
+      "coordinates": {
+        "lat": 36.0906437,
+        "lon": 136.9380288
+      },
+      "routeEndpoint": "荘川桜公園駐車場"
+    },
+    {
+      "id": "yokotani",
+      "name": "横谷峡四つの滝",
+      "reading": "よこたにきょうよっつのたき",
+      "city": "下呂市",
+      "district": "金山町金山横谷本洞",
+      "area": "hida",
+      "category": "water",
+      "source": "https://www.city.gero.lg.jp/site/kanko/1461.html",
+      "extraSources": [
+        "https://www.pref.gifu.lg.jp/page/7374.html"
+      ],
+      "address": "岐阜県下呂市金山町金山横谷本洞",
+      "summary": "山道でつながる、白滝から鶏鳴滝までの四つの滝。",
+      "description": "横谷川の谷に白滝、二見滝、紅葉滝、鶏鳴滝が続く。川沿いの山道を歩きながら、滝と周囲の森を見られる。",
+      "access": "JR飛騨金山駅からげろバス金山祖師野線で滝口下車、徒歩約5分。車は国道256号から横谷峡駐車場へ。",
+      "travel": {
+        "walk": "徒歩旅おすすめ",
+        "cycle": "自転車＋徒歩",
+        "rail": "鉄道＋バス"
+      },
+      "selected": true,
+      "fees": [],
+      "origin": "原駅（愛知県名古屋市天白区）",
+      "researchedAt": "2026-10-07",
+      "selectionReason": "森、水辺、田園の実景と、公開された到着地点の案内を掲載できるため。",
+      "sourceMapEvidence": {
+        "mapCoordinates": [
+          [
+            35.670406,
+            137.122593
+          ],
+          [
+            35.664409,
+            137.140875
+          ]
+        ],
+        "mapLinks": [
+          "http://maps.google.co.jp/maps?f=d&hl=ja&geocode=&saddr=&daddr=35.668907,137.110834&mra=mi&mrsp=0&sz=15&sll=35.670406,137.122593&sspn=0.024962,0.037422&ie=UTF8&ll=35.664409,137.140875&spn=0.049929,0.074844&z=14&start=0"
+        ]
+      },
+      "verified_at": "2026-10-07",
+      "coords": [
+        35.668907,
+        137.110834
+      ],
+      "arrival": {
+        "lat": 35.668907,
+        "lon": 137.110834,
+        "name": "横谷峡入口・駐車場付近",
+        "address": "岐阜県下呂市金山町金山横谷本洞",
+        "source": "https://www.city.gero.lg.jp/site/kanko/1461.html",
+        "basis": "下呂市のGoogle Maps車経路でdaddrに指定された到着座標。川沿いの道路とOSM美濃東部農道を照合。"
+      },
+      "routeDestination": "横谷峡入口・駐車場付近 岐阜県下呂市金山町金山横谷本洞",
+      "travelReasons": {
+        "walk": "森・湿原・集落の道を歩いて風景を見る。",
+        "cycle": "道路で移動し、現地の散策路は徒歩。",
+        "rail": "JR飛騨金山駅から路線バスと徒歩で到着できる。"
+      },
+      "coordinates": {
+        "lat": 35.668907,
+        "lon": 137.110834
+      },
+      "routeEndpoint": "横谷峡入口・駐車場付近"
+    },
+    {
+      "id": "tengai",
+      "name": "天蓋山",
+      "reading": "てんがいさん",
+      "city": "飛騨市",
+      "district": "神岡町森茂",
+      "area": "hida",
+      "category": "forest",
+      "source": "https://www.hida-kankou.jp/spot/343",
+      "extraSources": [
+        "https://www.hida-kankou.jp/features/162"
+      ],
+      "address": "岐阜県飛騨市神岡町森茂1940（登山口）",
+      "summary": "広葉樹の森を登り、山頂から北アルプスを望む。",
+      "description": "登山口から森の山道を登る。雀平の先にはブナの大木があり、山頂では北アルプスや白山などの山並みを見渡せる。",
+      "access": "天蓋山登山者用駐車場へ車。森茂1940の登山口から山頂までは登り約2時間。",
+      "travel": {
+        "walk": "登山",
+        "cycle": "自転車＋徒歩",
+        "rail": "車アクセス中心"
+      },
+      "selected": true,
+      "fees": [
+        {
+          "label": "登山者用駐車場",
+          "amount": 0,
+          "unit": "円",
+          "source": "https://www.hida-kankou.jp/spot/343"
+        }
+      ],
+      "origin": "原駅（愛知県名古屋市天白区）",
+      "researchedAt": "2026-10-07",
+      "selectionReason": "森、水辺、田園の実景と、公開された到着地点の案内を掲載できるため。",
+      "sourceMapEvidence": {
+        "mapCoordinates": [
+          [
+            36.3677368,
+            137.3775782
+          ]
+        ],
+        "mapLinks": [
+          "https://www.google.com/maps/embed/v1/place?key=REMOVED&q=36.3677368,137.3775782&center=36.3677368,137.3775782&zoom=13"
+        ]
+      },
+      "verified_at": "2026-10-07",
+      "coords": [
+        36.3677368,
+        137.3775782
+      ],
+      "arrival": {
+        "lat": 36.3677368,
+        "lon": 137.3775782,
+        "name": "天蓋山登山者用駐車場",
+        "address": "岐阜県飛騨市神岡町森茂1940（登山口）",
+        "source": "https://www.hida-kankou.jp/spot/343",
+        "basis": "観光協会の住所森茂1940と地図マーカー。道路の向かいに登山者用駐車場を明示。OSM幹線林道から約28m。山頂ではない。"
+      },
+      "routeDestination": "天蓋山登山者用駐車場 岐阜県飛騨市神岡町森茂1940（登山口）",
+      "travelReasons": {
+        "walk": "森・湿原・集落の道を歩いて風景を見る。",
+        "cycle": "道路で移動し、現地の散策路は徒歩。",
+        "rail": "車で現地へ移動し、現地では徒歩。"
+      },
+      "coordinates": {
+        "lat": 36.3677368,
+        "lon": 137.3775782
+      },
+      "routeEndpoint": "天蓋山登山者用駐車場"
+    },
+    {
+      "id": "shiramizu",
+      "name": "白水滝",
+      "reading": "しらみずのたき",
+      "city": "白川村",
+      "district": "平瀬ワリ谷",
+      "area": "hida",
+      "category": "water",
+      "source": "https://www.pref.gifu.lg.jp/page/7539.html",
+      "extraSources": [
+        "https://www.shirakawa-go.org/1117.htm",
+        "https://www.vill.shirakawa.lg.jp/2918.htm"
+      ],
+      "address": "岐阜県大野郡白川村平瀬ワリ谷",
+      "summary": "原生林の断崖から落ちる、落差67.4mの滝。",
+      "description": "ブナやミズナラなどの森を背に流れ落ちる滝。滝から約250m離れた観瀑台から、岩壁と水の流れを見渡せる。",
+      "access": "県道451号の白水滝駐車場へ車。観瀑台へ徒歩。",
+      "travel": {
+        "walk": "徒歩旅おすすめ",
+        "cycle": "自転車＋徒歩",
+        "rail": "車アクセス中心"
+      },
+      "selected": true,
+      "fees": [],
+      "origin": "原駅（愛知県名古屋市天白区）",
+      "researchedAt": "2026-10-07",
+      "selectionReason": "森、水辺、田園の実景と、公開された到着地点の案内を掲載できるため。",
+      "sourceMapEvidence": {
+        "mapCoordinates": [],
+        "mapLinks": []
+      },
+      "verified_at": "2026-10-07",
+      "researchNotes": [
+        "白川村2026-09-29更新で県道451号は2026-10-01から開通、白水滝・白水湖は見学可と明記。白山平瀬道の登山は別条件のため案内しない。"
+      ],
+      "coords": [
+        36.145432,
+        136.827396
+      ],
+      "arrival": {
+        "lat": 36.145432,
+        "lon": 136.827396,
+        "name": "白水滝付近の県道451号",
+        "address": "岐阜県大野郡白川村平瀬ワリ谷",
+        "source": "https://www.shirakawa-go.org/1117.htm",
+        "basis": "村の観瀑台地図の近くで、OSM県道451号道路ノードを車の到着点とした。観瀑台自体の座標は徒歩地点なので使わない。"
+      },
+      "routeDestination": "白水滝付近の県道451号 岐阜県大野郡白川村平瀬ワリ谷",
+      "travelReasons": {
+        "walk": "森・湿原・集落の道を歩いて風景を見る。",
+        "cycle": "道路で移動し、現地の散策路は徒歩。",
+        "rail": "車で現地へ移動し、現地では徒歩。"
+      },
+      "coordinates": {
+        "lat": 36.145432,
+        "lon": 136.827396
+      },
+      "routeEndpoint": "白水滝付近の県道451号"
+    },
+    {
+      "id": "nakayama",
+      "name": "中山七里",
+      "reading": "なかやましちり",
+      "city": "下呂市",
+      "district": "三原～金山町中切",
+      "area": "hida",
+      "category": "water",
+      "source": "https://www.kankou-gifu.jp/spot/detail_1049.html",
+      "extraSources": [
+        "https://www.gero-spa.com/spot/detail_20.html"
+      ],
+      "address": "岐阜県下呂市三原～金山町中切の区間",
+      "summary": "飛騨川沿いの岩と、谷を囲む山林。",
+      "description": "三原から金山町中切まで続く飛騨川の峡谷。国道41号や焼石駅周辺から、岩の多い川の流れと山の斜面を眺められる。",
+      "access": "原駅から名古屋駅を経てJR高山本線の焼石駅へ。駅から徒歩約10分。",
+      "travel": {
+        "walk": "徒歩旅おすすめ",
+        "cycle": "自転車＋徒歩",
+        "rail": "電車旅おすすめ"
+      },
+      "selected": true,
+      "fees": [],
+      "origin": "原駅（愛知県名古屋市天白区）",
+      "researchedAt": "2026-10-07",
+      "selectionReason": "森、水辺、田園の実景と、公開された到着地点の案内を掲載できるため。",
+      "sourceMapEvidence": {
+        "mapCoordinates": [
+          [
+            35.6908162332405,
+            137.173318862915
+          ]
+        ],
+        "mapLinks": [
+          "https://www.google.com/maps/embed/v1/place?key=REMOVED&q=35.6908162332405,137.173318862915&zoom=10"
+        ]
+      },
+      "verified_at": "2026-10-07",
+      "coords": [
+        35.6927685,
+        137.1731179
+      ],
+      "arrival": {
+        "lat": 35.6927685,
+        "lon": 137.1731179,
+        "name": "中山七里・国道41号沿い",
+        "address": "岐阜県下呂市三原～金山町中切の区間",
+        "source": "https://www.kankou-gifu.jp/spot/detail_1049.html",
+        "basis": "県観光地図の中山七里マーカー近くの道路側に移動。OSM residential way114255939。飛騨川の水面座標へ車を誘導しない。"
+      },
+      "routeDestination": "中山七里・国道41号沿い 岐阜県下呂市三原～金山町中切の区間",
+      "travelReasons": {
+        "walk": "森・湿原・集落の道を歩いて風景を見る。",
+        "cycle": "道路で移動し、現地の散策路は徒歩。",
+        "rail": "JR焼石駅から徒歩約10分という公式アクセスがある。"
+      },
+      "coordinates": {
+        "lat": 35.6927685,
+        "lon": 137.1731179
+      },
+      "routeEndpoint": "中山七里・国道41号沿い"
+    },
+    {
+      "id": "kurai",
+      "name": "位山",
+      "reading": "くらいやま",
+      "city": "高山市",
+      "district": "一之宮町苅安",
+      "area": "hida",
+      "category": "forest",
+      "source": "https://www.hidatakayama.or.jp/hidaichinomiya/spot/detail_1357.html",
+      "extraSources": [
+        "https://www.city.takayama.lg.jp/shisetsu/1004139/1000043/1018654.html"
+      ],
+      "address": "岐阜県高山市一之宮町苅安（スキー場側登山口）",
+      "summary": "ヒノキやサワラの森と、登山道沿いの巨石。",
+      "description": "標高1,529mの山。スキー場側から登る道には針葉樹の森と巨石があり、山頂付近にはサラサドウダンの群生がある。",
+      "access": "位山交流広場の駐車場へ車。スキー場側の登山口から徒歩。",
+      "travel": {
+        "walk": "登山",
+        "cycle": "自転車＋徒歩",
+        "rail": "車アクセス中心"
+      },
+      "selected": true,
+      "fees": [],
+      "origin": "原駅（愛知県名古屋市天白区）",
+      "researchedAt": "2026-10-07",
+      "selectionReason": "森、水辺、田園の実景と、公開された到着地点の案内を掲載できるため。",
+      "sourceMapEvidence": {
+        "mapCoordinates": [
+          [
+            36.0383326,
+            137.196601
+          ],
+          [
+            36.062297,
+            137.226419
+          ],
+          [
+            36.062297,
+            137.226419
+          ]
+        ],
+        "mapLinks": [
+          "https://www.google.com/maps/place/%E4%BD%8D%E5%B1%B1/@36.038349,137.1863013,15z/data=!4m8!3m7!1s0x6002bebfaa4cde4f:0x2d6ae9c2098ce73e!8m2!3d36.0383326!4d137.196601!9m1!1b1!16s%2Fm%2F0g5q8gm?authuser=0&entry=ttu&g_ep=EgoyMDI2MDcwOC4wIKXMDSoASAFQAw%3D%3D",
+          "https://www.google.com/maps/embed/v1/place?key=REMOVED&q=36.062297,137.226419&zoom=15"
+        ]
+      },
+      "verified_at": "2026-10-07",
+      "researchNotes": [
+        "2026-09-11の市公式案内でダナ平林道は通行止め。市が案内するスキー場側登山道を使用し、閉鎖林道やその先の巨石群登山口に自動車を誘導しない。"
+      ],
+      "coords": [
+        36.062297,
+        137.226419
+      ],
+      "arrival": {
+        "lat": 36.062297,
+        "lon": 137.226419,
+        "name": "位山交流広場・スキー場側登山口",
+        "address": "岐阜県高山市一之宮町苅安（スキー場側登山口）",
+        "source": "https://www.hidatakayama.or.jp/hidaichinomiya/spot/detail_1357.html",
+        "basis": "観光協会のスキー場側地図。OSM宮萩原線・スキー場道路を照合。閉鎖ダナ平林道終点や山頂の座標を使わない。"
+      },
+      "routeDestination": "位山交流広場・スキー場側登山口 岐阜県高山市一之宮町苅安（スキー場側登山口）",
+      "travelReasons": {
+        "walk": "森・湿原・集落の道を歩いて風景を見る。",
+        "cycle": "道路で移動し、現地の散策路は徒歩。",
+        "rail": "車で現地へ移動し、現地では徒歩。"
+      },
+      "coordinates": {
+        "lat": 36.062297,
+        "lon": 137.226419
+      },
+      "routeEndpoint": "位山交流広場・スキー場側登山口"
+    },
+    {
+      "id": "uogaeri",
+      "name": "魚帰りの滝",
+      "reading": "うおがえりのたき",
+      "city": "高山市",
+      "district": "荘川町三尾河",
+      "area": "hida",
+      "category": "water",
+      "source": "https://www.hidatakayama.or.jp/spot/detail_1413.html",
+      "extraSources": [],
+      "address": "岐阜県高山市荘川町三尾河",
+      "summary": "庄川に広がる幅約14mの滝。",
+      "description": "庄川と三谷川が合流する手前にある落差約6mの滝。国道158号の近くにある。",
+      "access": "国道158号の三尾河地区へ車。",
+      "travel": {},
+      "selected": false,
+      "fees": [],
+      "origin": "原駅（愛知県名古屋市天白区）",
+      "researchedAt": "2026-10-07",
+      "selectionReason": "水辺の地点は選定済みで、森・高原・田園の構成に分散するため不採用。",
+      "sourceMapEvidence": {
+        "mapCoordinates": [
+          [
+            36.0293465,
+            136.9957291
+          ],
+          [
+            36.0298188316692,
+            136.996173373016
+          ],
+          [
+            36.0298188316692,
+            136.996173373016
+          ]
+        ],
+        "mapLinks": [
+          "https://www.google.com/maps/place/%E9%AD%9A%E5%B8%B0%E3%82%8A%E3%81%AE%E6%BB%9D/@36.0293508,136.9931542,17z/data=!4m8!3m7!1s0x6002900dcbb811b5:0x9abbf3b61659cc95!8m2!3d36.0293465!4d136.9957291!9m1!1b1!16s%2Fg%2F11bwfmk6m6?authuser=0&entry=ttu&g_ep=EgoyMDI2MDcwOC4wIKXMDSoASAFQAw%3D%3D",
+          "https://www.google.com/maps/embed/v1/place?key=REMOVED&q=36.0298188316692,136.996173373016&zoom=15"
+        ]
+      },
+      "verified_at": "2026-10-07"
+    },
+    {
+      "id": "akagane",
+      "name": "あかがねとよ",
+      "reading": "あかがねとよ",
+      "city": "下呂市",
+      "district": "小坂町落合",
+      "area": "hida",
+      "category": "water",
+      "source": "https://www.gero-spa.com/spot/detail_64.html",
+      "extraSources": [
+        "https://hidaosaka-kanko.com/news/2026092052/takimibashi-20260919/"
+      ],
+      "address": "岐阜県下呂市小坂町落合",
+      "summary": "溶岩の地形にかかる落差14mの滝。",
+      "description": "椹谷の支流にある滝。溶岩の岩肌が銅色に見えることから名付けられた。",
+      "access": "がんだて公園方面の滝めぐり区間。",
+      "travel": {},
+      "selected": false,
+      "fees": [],
+      "origin": "原駅（愛知県名古屋市天白区）",
+      "researchedAt": "2026-10-07",
+      "selectionReason": "2026年9月19日の観光協会案内で滝見橋より先は通行止め。直接案内できないため不採用。",
+      "sourceMapEvidence": {
+        "mapCoordinates": [
+          [
+            35.9139748284294,
+            137.330549955368
+          ]
+        ],
+        "mapLinks": [
+          "https://maps.google.co.jp/maps?ll=35.9139748284294,137.330549955368&q=あかがねとよ  下呂市小坂町落合&hl=ja&output=embed&t=m&z=16"
+        ]
+      },
+      "verified_at": "2026-10-07"
+    },
+    {
+      "id": "kaoredake",
+      "name": "川上岳",
+      "reading": "かおれだけ",
+      "city": "下呂市",
+      "district": "萩原町山之口",
+      "area": "hida",
+      "category": "forest",
+      "source": "https://www.gero-spa.com/spot/detail_59.html",
+      "extraSources": [],
+      "address": "岐阜県下呂市萩原町山之口地内",
+      "summary": "山頂付近のドウダンツツジと山並み。",
+      "description": "位山舟山県立自然公園に属する山。森の山腹を登ると尾根に出る。",
+      "access": "萩原町山之口方面の登山口。",
+      "travel": {},
+      "selected": false,
+      "fees": [],
+      "origin": "原駅（愛知県名古屋市天白区）",
+      "researchedAt": "2026-10-07",
+      "selectionReason": "登山地点が重なるため、現在の公式案内でスキー場側登山口を明示できる位山を優先。",
+      "sourceMapEvidence": {
+        "mapCoordinates": [
+          [
+            36.0080756974405,
+            137.149994373322
+          ]
+        ],
+        "mapLinks": [
+          "https://maps.google.co.jp/maps?ll=36.0080756974405,137.149994373322&q=川上岳 かおれだけ 下呂市萩原町山之口地内&hl=ja&output=embed&t=m&z=16"
+        ]
+      },
+      "verified_at": "2026-10-07"
+    },
+    {
+      "id": "fukado",
+      "name": "深洞湿原",
+      "reading": "ふかどしつげん",
+      "city": "飛騨市",
+      "district": "神岡町森茂",
+      "area": "hida",
+      "category": "forest",
+      "source": "https://www.hida-kankou.jp/spot/352",
+      "extraSources": [],
+      "address": "岐阜県飛騨市神岡町森茂",
+      "summary": "亜高山の針葉樹林と湿原。",
+      "description": "トウヒやクロベ、ブナなどの原生林が残る湿原。",
+      "access": "許可制の案内区域。",
+      "travel": {},
+      "selected": false,
+      "fees": [],
+      "origin": "原駅（愛知県名古屋市天白区）",
+      "researchedAt": "2026-10-07",
+      "selectionReason": "一般開放されておらず、入山許可を要するため不採用。",
+      "sourceMapEvidence": {
+        "mapCoordinates": [
+          [
+            36.3775739,
+            137.3658347
+          ]
+        ],
+        "mapLinks": [
+          "https://www.google.com/maps/embed/v1/place?key=REMOVED&q=36.3775739,137.3658347&center=36.3775739,137.3658347&zoom=14"
+        ]
+      },
+      "verified_at": "2026-10-07"
+    }
+  ],
+  "selectedOrder": [
+    "kabusugi",
+    "enbara",
+    "tomida",
+    "kuronota",
+    "amou",
+    "tanekura",
+    "kaore",
+    "ikegahara",
+    "nenoue",
+    "juro",
+    "nishiure",
+    "yamanomura",
+    "utsue",
+    "hiwada",
+    "tokuyama",
+    "gandate",
+    "yokokura",
+    "hakusui",
+    "hisui",
+    "menodaki",
+    "oyada",
+    "miboro",
+    "goho",
+    "yokotani",
+    "tengai",
+    "shiramizu",
+    "tanigumi",
+    "nakayama",
+    "amida",
+    "kurai"
+  ]
+}

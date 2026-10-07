@@ -1,4 +1,4 @@
-import {createPhotoMotion} from './motion.js';
+import {createPhotoMotion,createSheetDrag} from './motion.js';
 import {createRandomPicker} from './random.js';
 import {createSceneScrubber} from './scrub.js';
 import { SPOTS, CATEGORIES, ORIGIN } from './data.js';
@@ -123,7 +123,12 @@ function openDialog(dialog){
  [...dialog.children].slice(1).forEach(el=>animate(el,[{opacity:0,transform:'translateY(13px)'},{opacity:1,transform:'translateY(0)'}],{duration:490,delay:130,fill:'backwards'}));
 }
 const closingDialogs=new WeakSet();
-async function closeDialog(dialog){if(!dialog.open||closingDialogs.has(dialog))return;closingDialogs.add(dialog);try{await animate(dialog,matchMedia('(orientation:landscape)').matches?[{transform:'translateX(0)',opacity:1},{transform:'translateX(24%)',opacity:0}]:[{transform:'translateY(0)',opacity:1},{transform:'translateY(18%)',opacity:0}],{duration:240,easing:'cubic-bezier(.4,0,1,1)'});dialog.close();}finally{closingDialogs.delete(dialog);if(!$('dialog[open]')){document.body.classList.remove('has-sheet');if(state.view==='scenery')photoMotion.resume();}}}
+async function closeDialog(dialog){
+ if(!dialog.open||closingDialogs.has(dialog))return;closingDialogs.add(dialog);
+ const start=getComputedStyle(dialog).transform,landscape=matchMedia('(orientation:landscape)').matches;dialog.style.transform='';
+ try{await animate(dialog,[{transform:start==='none'?'translate3d(0,0,0)':start,opacity:1},{transform:landscape?'translate3d(100%,0,0)':'translate3d(0,100%,0)',opacity:.6}],{duration:340,easing:'cubic-bezier(.4,0,.8,.35)'});dialog.close();}
+ finally{closingDialogs.delete(dialog);if(!$('dialog[open]')){document.body.classList.remove('has-sheet');if(state.view==='scenery')photoMotion.resume();}}
+}
 function photoSource(p){return `写真：${esc(p.author)} · <a href="${p.source_url}" target="_blank" rel="noopener noreferrer">原画像</a> · <a href="${p.license_url}" target="_blank" rel="noopener noreferrer">${esc(p.license)}</a>`;}
 function filmstrip(s){
  const keys=gallery(s);if(keys.length<2)return '';
@@ -177,7 +182,7 @@ $$('.filter-options').forEach(group=>group.addEventListener('click',e=>{const b=
 $('#filter-apply').onclick=()=>{for(const k of ['area','category','travel'])state[k]=draft[k];renderScene();if(state.view==='list')renderList();closeDialog($('#filter-dialog'));};
 $$('[data-reset]').forEach(b=>b.onclick=reset);
 $$('.close-dialog').forEach(b=>{b.innerHTML=icon('close');b.onclick=()=>closeDialog(b.closest('dialog'));});
-$$('.sheet-header').forEach(header=>{let start=null;header.addEventListener('pointerdown',e=>{if(!e.target.closest('button'))start={x:e.clientX,y:e.clientY};});header.addEventListener('pointerup',e=>{if(start&&((matchMedia('(orientation:portrait)').matches&&e.clientY-start.y>45)||(matchMedia('(orientation:landscape)').matches&&e.clientX-start.x>55)))closeDialog(header.closest('dialog'));start=null;});header.addEventListener('pointercancel',()=>start=null);});
+$$('.sheet-header').forEach(header=>createSheetDrag({dialog:header.closest('dialog'),header,reduced,onClose:()=>closeDialog(header.closest('dialog'))}));
 $$('dialog').forEach(dialog=>{dialog.addEventListener('click',e=>{const r=dialog.getBoundingClientRect();if(e.target===dialog&&(e.clientX<r.left||e.clientX>r.right||e.clientY<r.top||e.clientY>r.bottom))closeDialog(dialog);});dialog.addEventListener('cancel',e=>{e.preventDefault();closeDialog(dialog);});});
 let openingSpot=false;
 for(const parent of [$('#spot-list'),$('#saved-list')])parent.addEventListener('click',async e=>{
@@ -192,15 +197,33 @@ $$('[data-icon]').forEach(el=>el.innerHTML=icon(el.dataset.icon));for(const [id,
 
 document.addEventListener('keydown',e=>{if(state.view!=='scenery'||$('dialog[open]')||e.target.matches('input')||e.target.closest('[data-scrubber]'))return;if(e.key==='ArrowRight')step(1);if(e.key==='ArrowLeft')step(-1);if(e.key==='Escape')photoMotion.mode(false);});
 $('#detail-content').addEventListener('click',async e=>{const thumb=e.target.closest('[data-photo]');if(thumb){selectPhoto(thumb.dataset.photo);return;}const button=e.target.closest('[data-open-photo]');if(!button)return;const fly=photoMotion.captureFlight($('img:not(.gallery-outgoing)',button));await closeDialog($('#detail-dialog'));photoMotion.mode(true);if(fly)await fly();photoMotion.resume();});
-const photoMotion=createPhotoMotion({reduced,isScenery:()=>state.view==='scenery'&&!$('dialog[open]'),onStep:step,onDetails:details});
+const photoMotion=createPhotoMotion({reduced,isScenery:()=>state.view==='scenery'&&!$('dialog[open]'),onStep:step,onDetails:details,getNeighbor:direction=>{
+ const list=filtered();if(list.length<2)return null;const index=list.findIndex(s=>s.id===state.id),neighbor=list[(index+direction+list.length)%list.length],p=currentPhoto(neighbor);
+ return p?{src:p.path,position:photoFocal(neighbor,p)}:null;
+}});
 createSceneScrubber({element:$('#scene-progress'),getItems:filtered,getCurrent:()=>state.id,onStart:()=>photoMotion.pause(),onSelect:async id=>{state.id=id;await renderScene(0,true);},onFinish:()=>{revealPanel();photoMotion.resume();}});
 $('#scene-map').insertAdjacentHTML('beforeend',icon('arrow'));
 $('#detail-open').insertAdjacentHTML('beforeend',icon('next'));
 $('#list-title').textContent=SPOTS.length+'景';
 renderScene();
 
-const offlineAssets=['./','./index.html','./style.css','./experience.css','./motion.js','./random.js','./scrub.js','./assets/contours.svg','./app.js','./data.js','./photos.js','./budgets.js','./manifest.webmanifest','./assets/icon-192.png','./assets/icon-512.png','./assets/NotoSerifJP.woff2','./assets/NotoSansJP.woff2','./assets/NotoSerifJP-OFL.txt','./assets/NotoSansJP-OFL.txt',...Object.values(PHOTOS).map(p=>p.path)];
+// Scroll-bound photo motion only runs when a visible surface moves.
+let photoScrollFrame=0;
+function updatePhotoScroll(){
+ photoScrollFrame=0;if(reduced())return;
+ const dialog=$('#detail-dialog');
+ if(dialog.open){const hero=$('.overview-photo',dialog),image=$('.overview-photo img:not(.gallery-outgoing)',dialog);if(hero&&image&&dialog.scrollTop<hero.offsetHeight)image.style.transform=`translate3d(0,${Math.min(dialog.scrollTop*.16,hero.offsetHeight*.2)}px,0) scale(1.035)`;}
+ if(state.view==='list'||state.view==='saved'){
+  const view=$('#'+state.view+'-view'),bounds=view.getBoundingClientRect();
+  $$('.card-image',view).forEach(frame=>{const r=frame.getBoundingClientRect();if(r.bottom<bounds.top||r.top>bounds.bottom)return;const shift=Math.max(-7,Math.min(7,(bounds.top+bounds.height*.5-r.top-r.height*.5)*.025));frame.style.setProperty('--card-shift',shift+'px');});
+ }
+}
+function queuePhotoScroll(){if(!photoScrollFrame)photoScrollFrame=requestAnimationFrame(updatePhotoScroll);}
+for(const element of [$('#list-view'),$('#saved-view'),$('#detail-dialog')])element.addEventListener('scroll',queuePhotoScroll,{passive:true});
+window.addEventListener('resize',queuePhotoScroll,{passive:true});
+
+const offlineAssets=['./','./index.html','./style.css','./experience.css','./gallery.css','./motion.js','./random.js','./scrub.js','./assets/contours.svg','./app.js','./data.js','./photos.js','./budgets.js','./manifest.webmanifest','./assets/icon-192.png','./assets/icon-512.png','./assets/NotoSerifJP.woff2','./assets/NotoSansJP.woff2','./assets/NotoSerifJP-OFL.txt','./assets/NotoSansJP-OFL.txt',...Object.values(PHOTOS).map(p=>p.path)];
 let serviceWorkerReady;
-async function updateOfflineState(){try{const c=await caches.open('gifu-offline-v1');const found=await Promise.all(offlineAssets.map(u=>c.match(new URL(u,location.href).href)));const count=found.filter(Boolean).length;$('#offline-state').textContent=count===offlineAssets.length?'保存済み':count?`${count} / ${offlineAssets.length}`:'未保存';}catch{$('#offline-state').textContent='利用できません';}}
+async function updateOfflineState(){try{const c=await caches.open('gifu-offline-v2');const found=await Promise.all(offlineAssets.map(u=>c.match(new URL(u,location.href).href)));const count=found.filter(Boolean).length;$('#offline-state').textContent=count===offlineAssets.length?'保存済み':count?`${count} / ${offlineAssets.length}`:'未保存';}catch{$('#offline-state').textContent='利用できません';}}
 if('serviceWorker'in navigator&&window.isSecureContext){serviceWorkerReady=navigator.serviceWorker.register('./sw.js').then(()=>navigator.serviceWorker.ready).then(()=>updateOfflineState()).catch(()=>{$('#offline-state').textContent='利用できません';});}else{$('#offline-state').textContent='利用できません';}
-$('#offline-download').onclick=async()=>{const button=$('#offline-download');if(!('caches'in window)||!serviceWorkerReady){return;}button.disabled=true;let count=0;try{await serviceWorkerReady;const cache=await caches.open('gifu-offline-v1');for(const asset of offlineAssets){const url=new URL(asset,location.href).href;if(!(await cache.match(url))){const response=await fetch(url,{cache:'reload'});if(!response.ok)throw new Error('download');await cache.put(url,response);}$('#offline-state').textContent=`${++count} / ${offlineAssets.length}`;}$('#offline-state').textContent='保存済み';toast('写真と案内をオフライン保存しました。');}catch{await updateOfflineState();}finally{button.disabled=false;}};
+$('#offline-download').onclick=async()=>{const button=$('#offline-download');if(!('caches'in window)||!serviceWorkerReady){return;}button.disabled=true;let count=0;try{await serviceWorkerReady;const cache=await caches.open('gifu-offline-v2');for(const asset of offlineAssets){const url=new URL(asset,location.href).href;if(!(await cache.match(url))){const response=await fetch(url,{cache:'reload'});if(!response.ok)throw new Error('download');await cache.put(url,response);}$('#offline-state').textContent=`${++count} / ${offlineAssets.length}`;}$('#offline-state').textContent='保存済み';toast('写真と案内をオフライン保存しました。');}catch{await updateOfflineState();}finally{button.disabled=false;}};
