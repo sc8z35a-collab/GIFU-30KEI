@@ -1,3 +1,4 @@
+import {createInterfaceMotion} from './kinetic.js';
 import {readyPhoto,photoPath} from './photo-loader.js';
 import {createPhotoMotion,createSheetDrag} from './motion.js';
 import {createRandomPicker} from './random.js';
@@ -41,6 +42,7 @@ if(mobile)document.body.classList.add('touch-device');
 document.body.classList.toggle('reduce-motion',state.reduced);
 $('#reduce-motion').checked=state.reduced;
 const reduced = ()=>state.reduced || matchMedia('(prefers-reduced-motion: reduce)').matches;
+const interfaceMotion=createInterfaceMotion({reduced});
 const animate = (el, frames, options={}) => {if(!el || reduced())return Promise.resolve();return el.animate(frames,{duration:450,easing:'cubic-bezier(.22,1,.36,1)',...options}).finished.catch(()=>{});};
 const current=()=>SPOTS.find(s=>s.id===state.id);
 const photoChoices=storage.get('photo-choices',{});
@@ -71,10 +73,7 @@ function updateSaves(){
  $('#nav-saved-count').textContent=state.saved.size;$('#nav-saved-count').hidden=!state.saved.size;$('#saved-count').textContent=state.saved.size;
 }
 let photoSequence=0,displayedId=state.id;
-function revealPanel(direction=0){
- const children=[$('.scene-heading'),$('#scene-summary'),$('#scene-tags'),$('.scene-quick-info'),$('.scene-actions'),$('.scene-stepper')];
- children.forEach((el,index)=>{el.getAnimations().forEach(a=>a.cancel());animate(el,[{opacity:0,transform:`translate3d(${direction*12}px,${13+index*2}px,0)`},{opacity:1,transform:'translate3d(0,0,0)'}],{duration:620,delay:index*40,fill:'backwards'});});
-}
+function revealPanel(direction=0){interfaceMotion.scene(direction);}
 async function renderScene(direction=0,quiet=false){
  const spots=filtered();updateRandomButtons();$('#scenery-empty').hidden=!!spots.length;if(!spots.length)return;
  if(!spots.some(s=>s.id===state.id))state.id=spots[0].id;
@@ -105,35 +104,36 @@ function updateRandomButtons(){const disabled=filtered().length<2;for(const butt
 async function randomScene(){
  if(turning||openingSpot)return;const pool=filtered(),id=pickRandom(pool,state.id);if(!id||id===state.id)return;
  turning=true;const before=pool.findIndex(s=>s.id===state.id),after=pool.findIndex(s=>s.id===id);
- for(const button of [$('#scene-random'),$('#list-random')]){button.setAttribute('aria-busy','true');animate($('svg',button),[{transform:'rotate(-20deg) scale(.8)'},{transform:'rotate(360deg) scale(1)'}],{duration:620});}
+ for(const button of [$('#scene-random'),$('#list-random')]){button.setAttribute('aria-busy','true');animate($('svg',button),[{transform:'rotate(-40deg) scale(.7)'},{transform:'rotate(690deg) scale(1.15)',offset:.75},{transform:'rotate(720deg) scale(1)'}],{duration:960});}
  photoMotion.mode(false);state.id=id;setView('scenery',true);
  try{await renderScene(after>before?1:-1);}finally{for(const button of [$('#scene-random'),$('#list-random')])button.removeAttribute('aria-busy');setTimeout(()=>turning=false,reduced()?0:280);}
 }
 function card(s){const p=currentPhoto(s);return `<article class="spot-card"><button class="spot-card-main" data-spot="${s.id}" aria-label="${esc(s.name)}の風景を見る"><div class="card-image${p?'':' card-no-photo'}">${p?`<img src="${photoPath(p.path)}" alt="${esc(p.caption||s.photoCaption||s.name)}" style="${focalStyle(s,p)}" loading="lazy" decoding="async">`:`${icon(s.category==='forest'?'landscape':'pin')}`}<span class="card-number">${String(s.number).padStart(2,'0')}</span><span class="card-area">${esc(s.city)}・${esc(s.district)}</span></div><div class="card-info"><h2>${esc(s.name)}</h2>${tags(s)}<p>${esc(s.summary)}</p><div class="card-budget"><span>原駅発・往復燃料費</span><strong>${budget(s)}</strong></div></div></button><button class="card-save" data-save="${s.id}" aria-label="この場所を保存" aria-pressed="${state.saved.has(s.id)}">${icon('bookmark')}</button></article>`;}
 let observer;
-function observeCards(parent){if(reduced()||!('IntersectionObserver'in window))return;observer?.disconnect();observer=new IntersectionObserver(entries=>{let n=0;for(const entry of entries){if(entry.isIntersecting){animate(entry.target,[{opacity:0,transform:'translate3d(0,32px,0) scale(.97)'},{opacity:1,transform:'translate3d(0,0,0) scale(1)'}],{duration:700,delay:n++*55,fill:'backwards'});observer.unobserve(entry.target);}}},{threshold:.05});$$('.spot-card',parent).forEach(el=>observer.observe(el));}
+function observeCards(parent){
+ if(reduced()||!('IntersectionObserver'in window))return;
+ observer?.disconnect();observer=new IntersectionObserver(entries=>{let n=0;for(const entry of entries)if(entry.isIntersecting){interfaceMotion.card(entry.target,n++);observer.unobserve(entry.target);}},{threshold:.05});
+ $$('.spot-card',parent).forEach(element=>observer.observe(element));
+}
 function renderList(){const list=filtered();updateRandomButtons();$('#spot-list').innerHTML=list.map(card).join('');$('#list-count').textContent=list.length+'件';$('#list-empty').hidden=!!list.length;$('#filter-description').textContent=[state.category==='all'?'すべての風景':CATEGORIES[state.category],state.travel==='all'?'':travelNames[state.travel]].filter(Boolean).join(' · ');$$('.quick-areas [data-area]').forEach(b=>{b.classList.toggle('selected',b.dataset.area===state.area);b.setAttribute('aria-pressed',String(b.dataset.area===state.area));});observeCards($('#spot-list'));updateSaves();}
 function renderSaved(){const list=SPOTS.filter(s=>state.saved.has(s.id));$('#saved-list').innerHTML=list.map(card).join('');$('#saved-empty').hidden=!!list.length;updateSaves();observeCards($('#saved-list'));}
 function setView(view,quiet=false){
- if(view===state.view)return;photoMotion.mode(false);state.view=view;
+ if(view===state.view)return;const previousView=state.view;photoMotion.mode(false);state.view=view;
  $$('.view').forEach(v=>{v.hidden=v.id!==view+'-view';v.classList.toggle('active',!v.hidden);});
  $$('[data-view]').forEach(b=>{b.classList.toggle('active',b.dataset.view===view);if(b.dataset.view===view)b.setAttribute('aria-current','page');else b.removeAttribute('aria-current');});
- $('.tabbar').style.setProperty('--tab-index',['scenery','list','saved','settings'].indexOf(view));
+ const order=['scenery','list','saved','settings'];$('.tabbar').style.setProperty('--tab-index',order.indexOf(view));
  if(view==='list')renderList();if(view==='saved')renderSaved();
  if(view==='scenery')photoMotion.resume();else photoMotion.pause();
- if(!quiet)animate($('#'+view+'-view'),[{opacity:.15,transform:'translate3d(0,14px,0)'},{opacity:1,transform:'translate3d(0,0,0)'}],{duration:500});
+ if(!quiet)interfaceMotion.view($('#'+view+'-view'),order.indexOf(view)>order.indexOf(previousView)?1:-1);
 }
 function openDialog(dialog){
  if(dialog.open)return;document.body.classList.add('has-sheet');photoMotion.pause();dialog.showModal();dialog.scrollTop=0;
- const landscape=matchMedia('(orientation:landscape)').matches;
- animate(dialog,[{transform:landscape?'translate3d(100%,0,0)':'translate3d(0,75%,0)',opacity:.55},{transform:'translate3d(0,0,0)',opacity:1}],{duration:580});
- [...dialog.children].slice(1).forEach(el=>animate(el,[{opacity:0,transform:'translateY(13px)'},{opacity:1,transform:'translateY(0)'}],{duration:490,delay:130,fill:'backwards'}));
+ interfaceMotion.openSheet(dialog);
 }
 const closingDialogs=new WeakSet();
 async function closeDialog(dialog){
  if(!dialog.open||closingDialogs.has(dialog))return;closingDialogs.add(dialog);
- const start=getComputedStyle(dialog).transform,landscape=matchMedia('(orientation:landscape)').matches;dialog.style.transform='';
- try{await animate(dialog,[{transform:start==='none'?'translate3d(0,0,0)':start,opacity:1},{transform:landscape?'translate3d(100%,0,0)':'translate3d(0,100%,0)',opacity:.6}],{duration:340,easing:'cubic-bezier(.4,0,.8,.35)'});dialog.close();}
+ try{await interfaceMotion.closeSheet(dialog);dialog.close();}
  finally{closingDialogs.delete(dialog);if(!$('dialog[open]')){document.body.classList.remove('has-sheet');if(state.view==='scenery')photoMotion.resume();}}
 }
 function photoSource(p){return `写真：${esc(p.author)} · <a href="${p.source_url}" target="_blank" rel="noopener noreferrer">原画像</a> · <a href="${p.license_url}" target="_blank" rel="noopener noreferrer">${esc(p.license)}</a>`;}
@@ -152,8 +152,8 @@ async function selectPhoto(key){
  $('[data-photo-caption]').textContent=p.caption||s.photoCaption||s.name;$('[data-photo-author]').textContent='写真：'+p.author;
  $('[data-photo-source]').innerHTML=photoSource(p);
  $$('[data-photo]',$('#detail-content')).forEach(button=>button.setAttribute('aria-pressed',String(button.dataset.photo===key)));
- animate(hero,[{opacity:.3,transform:'scale(1.045)'},{opacity:1,transform:'scale(1)'}],{duration:680});
- animate(old,[{opacity:1},{opacity:0}],{duration:540}).finally(()=>old.remove());
+ animate(hero,[{opacity:.25,transform:'translate3d(7%,0,0) scale(1.25)'},{opacity:1,transform:'translate3d(0,0,0) scale(1.16)'}],{duration:1000});
+ animate(old,[{opacity:1,transform:'scale(1.16)'},{opacity:0,transform:'translate3d(-8%,0,0) scale(1.22)'}],{duration:820}).finally(()=>old.remove());
  await renderScene(0,true);
 }
 function details(){
@@ -201,6 +201,7 @@ for(const parent of [$('#spot-list'),$('#saved-list')])parent.addEventListener('
 });
 $('#random-start').onchange=e=>{state.randomStart=e.target.checked;storage.set('random-start',state.randomStart);};
 $('#reduce-motion').onchange=e=>{state.reduced=e.target.checked;storage.set('motion',state.reduced);document.body.classList.toggle('reduce-motion',state.reduced);if(state.reduced)document.getAnimations?.().forEach(a=>a.cancel());photoMotion.resume();};
+matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',()=>{if(reduced())document.getAnimations?.().forEach(a=>a.cancel());photoMotion.resume();});
 $$('[data-icon]').forEach(el=>el.innerHTML=icon(el.dataset.icon));for(const [id,name] of Object.entries({'photo-only-open':'photo','photo-only-close':'close','fullscreen-button':'fullscreen','scene-save':'bookmark','previous':'previous','next':'next','list-filter':'filter','search-icon':'search','saved-empty-icon':'bookmark'}))$('#'+id).innerHTML=icon(name);
 
 document.addEventListener('keydown',e=>{if(state.view!=='scenery'||$('dialog[open]')||e.target.matches('input')||e.target.closest('[data-scrubber]'))return;if(e.key==='ArrowRight')step(1);if(e.key==='ArrowLeft')step(-1);if(e.key==='Escape')photoMotion.mode(false);});
@@ -220,18 +221,18 @@ let photoScrollFrame=0;
 function updatePhotoScroll(){
  photoScrollFrame=0;if(reduced())return;
  const dialog=$('#detail-dialog');
- if(dialog.open){const hero=$('.overview-photo',dialog),image=$('.overview-photo img:not(.gallery-outgoing)',dialog);if(hero&&image&&dialog.scrollTop<hero.offsetHeight)image.style.transform=`translate3d(0,${Math.min(dialog.scrollTop*.16,hero.offsetHeight*.2)}px,0) scale(1.035)`;}
+ if(dialog.open){const hero=$('.overview-photo',dialog),image=$('.overview-photo img:not(.gallery-outgoing)',dialog);if(hero&&image&&dialog.scrollTop<hero.offsetHeight)image.style.transform=`translate3d(0,${Math.min(dialog.scrollTop*.22,hero.offsetHeight*.065)}px,0) scale(1.16)`;}
  if(state.view==='list'||state.view==='saved'){
   const view=$('#'+state.view+'-view'),bounds=view.getBoundingClientRect();
-  $$('.card-image',view).forEach(frame=>{const r=frame.getBoundingClientRect();if(r.bottom<bounds.top||r.top>bounds.bottom)return;const shift=Math.max(-7,Math.min(7,(bounds.top+bounds.height*.5-r.top-r.height*.5)*.025));frame.style.setProperty('--card-shift',shift+'px');});
+  $$('.card-image',view).forEach(frame=>{const r=frame.getBoundingClientRect();if(r.bottom<bounds.top||r.top>bounds.bottom)return;const limit=Math.min(17,r.height*.06),shift=Math.max(-limit,Math.min(limit,(bounds.top+bounds.height*.5-r.top-r.height*.5)*.055));frame.style.setProperty('--card-shift',shift+'px');});
  }
 }
 function queuePhotoScroll(){if(!photoScrollFrame)photoScrollFrame=requestAnimationFrame(updatePhotoScroll);}
 for(const element of [$('#list-view'),$('#saved-view'),$('#detail-dialog')])element.addEventListener('scroll',queuePhotoScroll,{passive:true});
 window.addEventListener('resize',queuePhotoScroll,{passive:true});
 
-const offlineAssets=['./','./index.html','./style.css','./experience.css','./gallery.css','./motion.js','./photo-loader.js','./random.js','./scrub.js','./assets/contours.svg','./app.js','./data.js','./photos.js','./budgets.js','./manifest.webmanifest','./assets/icon-192.png','./assets/icon-512.png','./assets/NotoSerifJP.woff2','./assets/NotoSansJP.woff2','./assets/NotoSerifJP-OFL.txt','./assets/NotoSansJP-OFL.txt',...Object.values(PHOTOS).map(p=>p.path)];
+const offlineAssets=['./','./index.html','./style.css','./experience.css','./gallery.css','./cinema.css','./kinetic.js','./motion.js','./photo-loader.js','./random.js','./scrub.js','./assets/contours.svg','./app.js','./data.js','./photos.js','./budgets.js','./manifest.webmanifest','./assets/icon-192.png','./assets/icon-512.png','./assets/NotoSerifJP.woff2','./assets/NotoSansJP.woff2','./assets/NotoSerifJP-OFL.txt','./assets/NotoSansJP-OFL.txt',...Object.values(PHOTOS).map(p=>p.path)];
 let serviceWorkerReady;
-async function updateOfflineState(){try{const c=await caches.open('gifu-offline-v3');const found=await Promise.all(offlineAssets.map(u=>c.match(new URL(u,location.href).href)));const count=found.filter(Boolean).length;$('#offline-state').textContent=count===offlineAssets.length?'保存済み':count?`${count} / ${offlineAssets.length}`:'未保存';}catch{$('#offline-state').textContent='利用できません';}}
+async function updateOfflineState(){try{const c=await caches.open('gifu-offline-v4');const found=await Promise.all(offlineAssets.map(u=>c.match(new URL(u,location.href).href)));const count=found.filter(Boolean).length;$('#offline-state').textContent=count===offlineAssets.length?'保存済み':count?`${count} / ${offlineAssets.length}`:'未保存';}catch{$('#offline-state').textContent='利用できません';}}
 if('serviceWorker'in navigator&&window.isSecureContext){serviceWorkerReady=navigator.serviceWorker.register('./sw.js').then(()=>navigator.serviceWorker.ready).then(()=>updateOfflineState()).catch(()=>{$('#offline-state').textContent='利用できません';});}else{$('#offline-state').textContent='利用できません';}
-$('#offline-download').onclick=async()=>{const button=$('#offline-download');if(!('caches'in window)||!serviceWorkerReady){return;}button.disabled=true;let count=0;try{await serviceWorkerReady;const cache=await caches.open('gifu-offline-v3');for(const asset of offlineAssets){const url=new URL(asset,location.href).href;if(!(await cache.match(url))){const response=await fetch(url,{cache:'reload'});if(!response.ok)throw new Error('download');await cache.put(url,response);}$('#offline-state').textContent=`${++count} / ${offlineAssets.length}`;}$('#offline-state').textContent='保存済み';toast('写真と案内をオフライン保存しました。');}catch{await updateOfflineState();}finally{button.disabled=false;}};
+$('#offline-download').onclick=async()=>{const button=$('#offline-download');if(!('caches'in window)||!serviceWorkerReady){return;}button.disabled=true;let count=0;try{await serviceWorkerReady;const cache=await caches.open('gifu-offline-v4');for(const asset of offlineAssets){const url=new URL(asset,location.href).href;if(!(await cache.match(url))){const response=await fetch(url,{cache:'reload'});if(!response.ok)throw new Error('download');await cache.put(url,response);}$('#offline-state').textContent=`${++count} / ${offlineAssets.length}`;}$('#offline-state').textContent='保存済み';toast('写真と案内をオフライン保存しました。');}catch{await updateOfflineState();}finally{button.disabled=false;}};

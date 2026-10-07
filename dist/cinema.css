@@ -1,0 +1,39 @@
+/* Layered motion uses the scenery photographs and the existing paper palette. */
+.scene-reveal-layer{position:absolute;inset:0;width:100%;height:100%;z-index:4;object-fit:cover;object-position:var(--focal-portrait,center);pointer-events:none;backface-visibility:hidden;transform-origin:center;will-change:transform,opacity}
+.photo-stage{perspective:1100px}
+.scene-heading,.scene-progress{perspective:650px}
+.scene-panel{transition:opacity .65s var(--ease-out),transform .85s var(--ease-out)}
+.meta-rule{transform-origin:left center}
+.scene-header,.photo-caption{transition:opacity .55s var(--ease-out),transform .75s var(--ease-out)}
+.photo-mode .scene-header{transform:translate3d(0,-22px,0)}
+.photo-mode .photo-caption{transform:translate3d(0,12px,0)}
+.photo-only-close{animation:photo-return .65s var(--ease-out)}
+.scene-actions>*,.header-actions>button,.step-button{backface-visibility:hidden}
+.touch-halo{position:fixed;z-index:40;border:1px solid currentColor;border-radius:50%;pointer-events:none;opacity:0;contain:layout style;will-change:transform,opacity}
+.card-image img{transform:translate3d(0,var(--card-shift,0px),0) scale(1.14);transition:transform 1.1s var(--ease-out),object-position .9s var(--ease-out)}
+.spot-card-main:active .card-image img{transform:translate3d(0,var(--card-shift,0px),0) scale(1.2)}
+.spot-card-main{transform-origin:center 40%;backface-visibility:hidden}
+.overview-photo img{transform:scale(1.16);transform-origin:center}
+.overview-title{perspective:600px}
+.tabbar:before{transition:transform .85s cubic-bezier(.2,.9,.25,1.16)}
+.tabbar>button.active svg{animation:nav-arrive .8s var(--ease-out)}
+.progress-track>span{transition:width 1.05s cubic-bezier(.19,1,.25,1)}
+.scene-ticks i{transition:height .7s var(--ease-out),background .55s}
+#scene-save[aria-pressed=true] svg,.card-save[aria-pressed=true] svg{animation:bookmark-arrive .75s var(--ease-out)}
+.film-frame{transition:opacity .55s,box-shadow .55s,transform .7s var(--ease-out)}
+.film-frame[aria-pressed=true]{animation:film-arrive .8s var(--ease-out)}
+.quick-areas button,.filter-options button{transition:background .45s,color .45s,box-shadow .5s,transform .6s var(--ease-out)}
+.setting-row input[type=checkbox]{transition:background .45s}
+.setting-row input[type=checkbox]:before{transition:transform .65s cubic-bezier(.2,.9,.25,1.18)}
+.sheet[open]::backdrop{animation:backdrop-arrive .8s var(--ease-out)}
+.sheet.sheet-exiting::backdrop{animation:backdrop-leave .4s ease-in forwards}
+.photo-flight{will-change:width,height,top,left,transform,opacity;backface-visibility:hidden}
+@keyframes nav-arrive{0%{transform:translate3d(0,8px,0) rotate(-18deg) scale(.75)}55%{transform:translate3d(0,-4px,0) rotate(8deg) scale(1.12)}100%{transform:translate3d(0,-1px,0) rotate(0deg) scale(1)}}
+@keyframes bookmark-arrive{0%{transform:scale(.65) rotate(-12deg)}55%{transform:scale(1.25) rotate(6deg)}100%{transform:scale(1) rotate(0deg)}}
+@keyframes film-arrive{0%{transform:translate3d(0,5px,0) scale(.93)}60%{transform:translate3d(0,-3px,0) scale(1.04)}100%{transform:translate3d(0,0,0) scale(1)}}
+@keyframes photo-return{from{opacity:0;transform:translate3d(0,-12px,0) scale(.7)}to{opacity:1;transform:translate3d(0,0,0) scale(1)}}
+@keyframes backdrop-arrive{from{opacity:0}to{opacity:1}}
+@keyframes backdrop-leave{from{opacity:1}to{opacity:0}}
+@media(orientation:landscape){.scene-reveal-layer{object-position:var(--focal-landscape,center)}.scene-panel{transform-origin:left center}}
+@media(prefers-reduced-motion:reduce){.scene-reveal-layer,.touch-halo{display:none!important}.overview-photo img{transform:none!important}}
+body.reduce-motion .scene-reveal-layer,body.reduce-motion .touch-halo{display:none!important}body.reduce-motion .overview-photo img{transform:none!important}
