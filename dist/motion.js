@@ -1,3 +1,4 @@
+import {readyPhoto} from './photo-loader.js';
 // Small, compositor-driven photo and touch controller. No animation dependency.
 export const clamp=(value,min,max)=>Math.min(max,Math.max(min,value));
 export function swipeDirection(dx,dy,elapsed){
@@ -22,10 +23,9 @@ export function createPhotoMotion({reduced,isScenery,onStep,onDetails,getNeighbo
   peek.style.transform=`translate3d(${direction*(1-amount)*18}px,0,0) scale(1.04)`;
   if(peekDirection===direction)return;peekDirection=direction;peek.hidden=true;
   const ticket=++peekTicket,neighbor=getNeighbor?.(direction);if(!neighbor)return;
-  const image=new Image();image.src=neighbor.src;
-  image.decode().then(()=>{
+  readyPhoto(neighbor.src).then(src=>{
    if(ticket!==peekTicket||!gesture||pinched||reduced())return;
-   peek.src=neighbor.src;peek.style.setProperty('--focal-portrait',neighbor.position.portrait);peek.style.setProperty('--focal-landscape',neighbor.position.landscape);peek.hidden=false;
+   peek.src=src;peek.style.setProperty('--focal-portrait',neighbor.position.portrait);peek.style.setProperty('--focal-landscape',neighbor.position.landscape);peek.hidden=false;
   }).catch(()=>{});
  }
  function reset(){zoom=1;panX=panY=0;move();settle();}
@@ -85,7 +85,6 @@ export function createPhotoMotion({reduced,isScenery,onStep,onDetails,getNeighbo
   if(direction){onStep(direction);}
   else if(dy< -56&&Math.abs(dy)>Math.abs(dx)&&!document.body.classList.contains('photo-mode')){onDetails();}
   else if(dy>65&&document.body.classList.contains('photo-mode')){mode(false);resume();}
-  else if(Math.abs(dx)<8&&Math.abs(dy)<8&&dt<350&&g.isPhoto){mode(!document.body.classList.contains('photo-mode'));resume();}
   else resume();
  }
  view.addEventListener('pointerup',e=>finish(e));view.addEventListener('pointercancel',e=>finish(e,true));
