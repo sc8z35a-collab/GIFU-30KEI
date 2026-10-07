@@ -4,7 +4,7 @@
   "private": true,
   "type": "module",
   "scripts": {
-    "check": "node --check dist/app.js && node --check dist/data.js && node --check dist/photos.js && node --check dist/budgets.js && node --check dist/sw.js && node --check dist/photo-loader.js && node --check dist/motion.js && node --check dist/random.js && node --check dist/scrub.js",
+    "check": "node --check dist/app.js && node --check dist/data.js && node --check dist/photos.js && node --check dist/budgets.js && node --check dist/sw.js && node --check dist/photo-loader.js && node --check dist/kinetic.js && node --check dist/motion.js && node --check dist/random.js && node --check dist/scrub.js",
     "dev": "node dev-server.mjs",
     "build": "npm run check"
   }
