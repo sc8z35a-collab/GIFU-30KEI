@@ -104,3 +104,8 @@
 @media(orientation:portrait) and (max-width:370px){.scene-panel{padding-left:22px;padding-right:22px}.scene-heading h1{font-size:30px}.scene-panel .access-tag{font-size:7px}.scene-quick-info .scene-time{font-size:8px}.compact-budget{font-size:15px}.spot-list{padding-left:15px;padding-right:15px;gap:24px 11px}.card-info h2{font-size:17px}.card-info .access-tag{font-size:7px}.spot-card:nth-child(7n+1) .card-info h2{font-size:25px}}
 @media(prefers-reduced-motion:reduce){.card-image img{transform:scale(1.03)!important}.scene-peek{display:none}.overview-photo img{transform:none!important}}
 body.reduce-motion .card-image img{transform:scale(1.03)!important}body.reduce-motion .scene-peek{display:none}body.reduce-motion .overview-photo img{transform:none!important}
+
+/* Photo-only mode is explicit and always has a visible way back. */
+.photo-only-close{display:none;position:absolute;top:calc(18px + var(--safe-top));right:calc(22px + var(--safe-right));z-index:30;width:44px;height:44px;border-color:#e8edd34d;background:#17261a99;box-shadow:0 3px 18px #0002;touch-action:manipulation}
+.photo-mode .photo-only-close{display:grid}.photo-only-close svg{width:21px;height:21px}
+@media(orientation:landscape){.photo-only-close{top:calc(15px + var(--safe-top));right:calc(17px + var(--safe-right));width:40px;height:40px}}
