@@ -4,7 +4,10 @@ import {createPhotoMotion,createSheetDrag} from './motion.js';
 import {createRandomPicker} from './random.js';
 import {createSceneScrubber} from './scrub.js';
 import { SPOTS, CATEGORIES, ORIGIN } from './data.js';
-import { PHOTOS } from './photos.js';
+import { PHOTOS as BASE_PHOTOS } from './photos.js';
+import { STORY_PHOTOS, STORY_KEYS } from './story-photos.js';
+import { renderPhotoStory } from './photo-story.js';
+const PHOTOS={...BASE_PHOTOS,...STORY_PHOTOS};
 import { BUDGETS } from './budgets.js';
 
 const $ = (s, parent = document) => parent.querySelector(s);
@@ -46,7 +49,7 @@ const interfaceMotion=createInterfaceMotion({reduced});
 const animate = (el, frames, options={}) => {if(!el || reduced())return Promise.resolve();return el.animate(frames,{duration:450,easing:'cubic-bezier(.22,1,.36,1)',...options}).finished.catch(()=>{});};
 const current=()=>SPOTS.find(s=>s.id===state.id);
 const photoChoices=storage.get('photo-choices',{});
-const gallery=s=>(s.gallery||[s.photo]).filter(key=>PHOTOS[key]);
+const gallery=s=>[...new Set([...(s.gallery||[s.photo]),...(STORY_KEYS[s.id]||[])])].filter(key=>PHOTOS[key]);
 const photoKey=s=>gallery(s).includes(photoChoices[s.id])?photoChoices[s.id]:s.photo;
 const currentPhoto=s=>PHOTOS[photoKey(s)];
 const photoFocal=(s,p)=>({portrait:p?.focal||photoPosition[s.id]||'center',landscape:p?.focalWide||p?.focal||photoPosition[s.id]||'center'});
@@ -136,18 +139,18 @@ async function closeDialog(dialog){
  try{await interfaceMotion.closeSheet(dialog);dialog.close();}
  finally{closingDialogs.delete(dialog);if(!$('dialog[open]')){document.body.classList.remove('has-sheet');if(state.view==='scenery')photoMotion.resume();}}
 }
-function photoSource(p){return `写真：${esc(p.author)} · <a href="${p.source_url}" target="_blank" rel="noopener noreferrer">原画像</a> · <a href="${p.license_url}" target="_blank" rel="noopener noreferrer">${esc(p.license)}</a>`;}
+function photoSource(p){return `写真：${esc(p.author)} · <a href="${esc(p.source_url)}" target="_blank" rel="noopener noreferrer">原画像</a> · <a href="${esc(p.license_url)}" target="_blank" rel="noopener noreferrer">${esc(p.license)}</a>`;}
 function filmstrip(s){
  const keys=gallery(s);if(keys.length<2)return '';
  return `<div class="photo-filmstrip" role="group" aria-label="${esc(s.name)}の写真">${keys.map((key,i)=>{const p=PHOTOS[key];return `<button class="film-frame" data-photo="${esc(key)}" aria-label="${esc(p.caption||p.title||s.name)}" aria-pressed="${key===photoKey(s)}"><img src="${photoPath(p.path)}" alt="" style="${focalStyle(s,p)}" loading="lazy" decoding="async"><span>${String(i+1).padStart(2,'0')}</span></button>`;}).join('')}</div>`;
 }
 let galleryRevision=0;
 async function selectPhoto(key){
- const s=current(),p=PHOTOS[key];if(!p||!gallery(s).includes(key)||key===photoKey(s))return;
- const ticket=++galleryRevision;try{await readyPhoto(p.path);}catch{return;}
- if(ticket!==galleryRevision||s.id!==state.id||!$('#detail-dialog').open)return;
+ const s=current(),p=PHOTOS[key],dialog=$('#detail-dialog');if(!p||!gallery(s).includes(key)||!dialog.open||closingDialogs.has(dialog))return false;if(key===photoKey(s))return true;
+ const ticket=++galleryRevision;try{await readyPhoto(p.path);}catch{return false;}
+ if(ticket!==galleryRevision||s.id!==state.id||!dialog.open||closingDialogs.has(dialog))return false;
  photoChoices[s.id]=key;storage.set('photo-choices',photoChoices);
- const hero=$('.overview-photo img'),old=hero.cloneNode();old.className='gallery-outgoing';old.alt='';old.setAttribute('aria-hidden','true');hero.before(old);
+ const hero=$('.overview-photo img:not(.gallery-outgoing)'),old=hero.cloneNode();old.className='gallery-outgoing';old.alt='';old.setAttribute('aria-hidden','true');hero.before(old);
  hero.src=photoPath(p.path);hero.alt=p.caption||s.photoCaption||s.name;hero.setAttribute('style',focalStyle(s,p));
  $('[data-photo-caption]').textContent=p.caption||s.photoCaption||s.name;$('[data-photo-author]').textContent='写真：'+p.author;
  $('[data-photo-source]').innerHTML=photoSource(p);
@@ -155,12 +158,14 @@ async function selectPhoto(key){
  animate(hero,[{opacity:.25,transform:'translate3d(7%,0,0) scale(1.25)'},{opacity:1,transform:'translate3d(0,0,0) scale(1.16)'}],{duration:1000});
  animate(old,[{opacity:1,transform:'scale(1.16)'},{opacity:0,transform:'translate3d(-8%,0,0) scale(1.22)'}],{duration:820}).finally(()=>old.remove());
  await renderScene(0,true);
+ return s.id===state.id&&photoKey(s)===key&&dialog.open&&!closingDialogs.has(dialog);
 }
 function details(){
+ galleryRevision++;
  const s=current(),b=BUDGETS[s.id],p=currentPhoto(s);
  const title=`<div class="overview-title"><span>${String(s.number).padStart(2,'0')} / ${esc(s.city)}・${esc(s.district)}</span><h2 id="detail-title">${esc(s.name)}</h2></div>`;
  const hero=p?`<figure class="overview-hero"><button class="overview-photo" data-open-photo aria-label="${esc(s.name)}の写真を全画面で見る"><img src="${photoPath(p.path)}" alt="${esc(p.caption||s.photoCaption||s.name)}" style="${focalStyle(s,p)}" decoding="async">${title}<span class="overview-expand">${icon('fullscreen')}</span></button><figcaption><span data-photo-caption>${esc(p.caption||s.photoCaption||s.name)}</span><span data-photo-author>写真：${esc(p.author)}</span></figcaption></figure>`:'';
- $('#detail-content').innerHTML=hero+filmstrip(s)+`<div class="detail-body">${tags(s)}<p class="detail-description">${esc(s.description)}</p><section class="detail-section"><h3>住所</h3><a class="address-link" href="${mapLink(s)}" target="_blank" rel="noopener noreferrer">${esc(s.address)} ${icon('arrow')}</a></section><section class="detail-section"><h3>原駅から</h3><p class="route-summary">${esc(s.access)}</p><div class="route-links"><a href="${routeLink(s,'transit')}" target="_blank" rel="noopener noreferrer">${icon('rail')}電車・バス</a><a href="${routeLink(s,'bicycling')}" target="_blank" rel="noopener noreferrer">${icon('cycle')}自転車</a><a href="${routeLink(s,'driving')}" target="_blank" rel="noopener noreferrer">${icon('pin')}車</a></div></section><section class="detail-section"><h3>原駅発・車1台の往復燃料費</h3><p class="budget-number">${budget(s)}</p>${b?`<dl class="budget-model"><div><dt>往復距離</dt><dd>約${b.roundTripKm}km${b.endpoint?` / ${esc(b.endpoint)}`:''}</dd></div><div><dt>燃費</dt><dd>12～18km/L</dd></div><div><dt>ガソリン</dt><dd>160～190円/L</dd></div><div><dt>上限の距離補正</dt><dd>＋10％</dd></div></dl>`:''}${s.fees?`<div class="local-fees"><h4>現地費用</h4><p>${esc(s.fees)}</p></div>`:''}</section><div class="source-links"><a class="detail-source" href="${s.source}" target="_blank" rel="noopener noreferrer">出典 ${icon('arrow')}</a>${(s.extraSources||[]).map((u,i)=>`<a class="detail-source" href="${u}" target="_blank" rel="noopener noreferrer">資料 ${i+1} ${icon('arrow')}</a>`).join('')}${p?`<small class="photo-source" data-photo-source>${photoSource(p)}</small>`:''}</div></div>`;
+ $('#detail-content').innerHTML=hero+filmstrip(s)+`<div class="detail-body">${tags(s)}<p class="detail-description">${esc(s.description)}</p>${renderPhotoStory(s,STORY_KEYS[s.id],PHOTOS,photoPath,icon('fullscreen'))}<section class="detail-section"><h3>住所</h3><a class="address-link" href="${mapLink(s)}" target="_blank" rel="noopener noreferrer">${esc(s.address)} ${icon('arrow')}</a></section><section class="detail-section"><h3>原駅から</h3><p class="route-summary">${esc(s.access)}</p><div class="route-links"><a href="${routeLink(s,'transit')}" target="_blank" rel="noopener noreferrer">${icon('rail')}電車・バス</a><a href="${routeLink(s,'bicycling')}" target="_blank" rel="noopener noreferrer">${icon('cycle')}自転車</a><a href="${routeLink(s,'driving')}" target="_blank" rel="noopener noreferrer">${icon('pin')}車</a></div></section><section class="detail-section"><h3>原駅発・車1台の往復燃料費</h3><p class="budget-number">${budget(s)}</p>${b?`<dl class="budget-model"><div><dt>往復距離</dt><dd>約${b.roundTripKm}km${b.endpoint?` / ${esc(b.endpoint)}`:''}</dd></div><div><dt>燃費</dt><dd>12～18km/L</dd></div><div><dt>ガソリン</dt><dd>160～190円/L</dd></div><div><dt>上限の距離補正</dt><dd>＋10％</dd></div></dl>`:''}${s.fees?`<div class="local-fees"><h4>現地費用</h4><p>${esc(s.fees)}</p></div>`:''}</section><div class="source-links"><a class="detail-source" href="${s.source}" target="_blank" rel="noopener noreferrer">出典 ${icon('arrow')}</a>${(s.extraSources||[]).map((u,i)=>`<a class="detail-source" href="${u}" target="_blank" rel="noopener noreferrer">資料 ${i+1} ${icon('arrow')}</a>`).join('')}${p?`<small class="photo-source" data-photo-source>${photoSource(p)}</small>`:''}</div></div>`;
  openDialog($('#detail-dialog'));
 }
 
@@ -205,7 +210,19 @@ matchMedia('(prefers-reduced-motion: reduce)').addEventListener('change',()=>{if
 $$('[data-icon]').forEach(el=>el.innerHTML=icon(el.dataset.icon));for(const [id,name] of Object.entries({'photo-only-open':'photo','photo-only-close':'close','fullscreen-button':'fullscreen','scene-save':'bookmark','previous':'previous','next':'next','list-filter':'filter','search-icon':'search','saved-empty-icon':'bookmark'}))$('#'+id).innerHTML=icon(name);
 
 document.addEventListener('keydown',e=>{if(state.view!=='scenery'||$('dialog[open]')||e.target.matches('input')||e.target.closest('[data-scrubber]'))return;if(e.key==='ArrowRight')step(1);if(e.key==='ArrowLeft')step(-1);if(e.key==='Escape')photoMotion.mode(false);});
-$('#detail-content').addEventListener('click',async e=>{const thumb=e.target.closest('[data-photo]');if(thumb){selectPhoto(thumb.dataset.photo);return;}const button=e.target.closest('[data-open-photo]');if(!button)return;const fly=photoMotion.captureFlight($('img:not(.gallery-outgoing)',button));await closeDialog($('#detail-dialog'));photoMotion.mode(true);if(fly)await fly();photoMotion.resume();});
+let openingDetailPhoto=false;
+$('#detail-content').addEventListener('click',async e=>{
+ const thumb=e.target.closest('[data-photo]');if(thumb){if(!openingDetailPhoto)selectPhoto(thumb.dataset.photo);return;}
+ const button=e.target.closest('[data-open-photo]');if(!button||openingDetailPhoto)return;
+ openingDetailPhoto=true;
+ try{
+  const id=state.id,dialog=$('#detail-dialog'),key=button.dataset.storyPhoto;
+  if(key&&!await selectPhoto(key))return;
+  if(id!==state.id||!dialog.open||closingDialogs.has(dialog))return;
+  const fly=photoMotion.captureFlight($('img:not(.gallery-outgoing)',button));
+  await closeDialog(dialog);photoMotion.mode(true);if(fly)await fly();
+ }finally{openingDetailPhoto=false;photoMotion.resume();}
+});
 const photoMotion=createPhotoMotion({reduced,isScenery:()=>state.view==='scenery'&&!$('dialog[open]'),onStep:step,onDetails:details,getNeighbor:direction=>{
  const list=filtered();if(list.length<2)return null;const index=list.findIndex(s=>s.id===state.id),neighbor=list[(index+direction+list.length)%list.length],p=currentPhoto(neighbor);
  return p?{src:p.path,position:photoFocal(neighbor,p)}:null;
@@ -231,8 +248,8 @@ function queuePhotoScroll(){if(!photoScrollFrame)photoScrollFrame=requestAnimati
 for(const element of [$('#list-view'),$('#saved-view'),$('#detail-dialog')])element.addEventListener('scroll',queuePhotoScroll,{passive:true});
 window.addEventListener('resize',queuePhotoScroll,{passive:true});
 
-const offlineAssets=['./','./index.html','./style.css','./experience.css','./gallery.css','./cinema.css','./kinetic.js','./motion.js','./photo-loader.js','./random.js','./scrub.js','./assets/contours.svg','./app.js','./data.js','./photos.js','./budgets.js','./manifest.webmanifest','./assets/icon-192.png','./assets/icon-512.png','./assets/NotoSerifJP.woff2','./assets/NotoSansJP.woff2','./assets/NotoSerifJP-OFL.txt','./assets/NotoSansJP-OFL.txt',...Object.values(PHOTOS).map(p=>p.path)];
+const offlineAssets=['./','./index.html','./style.css','./experience.css','./gallery.css','./cinema.css','./photo-story.css','./photo-story.js','./story-photos.js','./kinetic.js','./motion.js','./photo-loader.js','./random.js','./scrub.js','./assets/contours.svg','./app.js','./data.js','./photos.js','./budgets.js','./manifest.webmanifest','./assets/icon-192.png','./assets/icon-512.png','./assets/NotoSerifJP.woff2','./assets/NotoSansJP.woff2','./assets/NotoSerifJP-OFL.txt','./assets/NotoSansJP-OFL.txt',...Object.values(PHOTOS).map(p=>p.path)];
 let serviceWorkerReady;
-async function updateOfflineState(){try{const c=await caches.open('gifu-offline-v4');const found=await Promise.all(offlineAssets.map(u=>c.match(new URL(u,location.href).href)));const count=found.filter(Boolean).length;$('#offline-state').textContent=count===offlineAssets.length?'保存済み':count?`${count} / ${offlineAssets.length}`:'未保存';}catch{$('#offline-state').textContent='利用できません';}}
+async function updateOfflineState(){try{const c=await caches.open('gifu-offline-v5');const found=await Promise.all(offlineAssets.map(u=>c.match(new URL(u,location.href).href)));const count=found.filter(Boolean).length;$('#offline-state').textContent=count===offlineAssets.length?'保存済み':count?`${count} / ${offlineAssets.length}`:'未保存';}catch{$('#offline-state').textContent='利用できません';}}
 if('serviceWorker'in navigator&&window.isSecureContext){serviceWorkerReady=navigator.serviceWorker.register('./sw.js').then(()=>navigator.serviceWorker.ready).then(()=>updateOfflineState()).catch(()=>{$('#offline-state').textContent='利用できません';});}else{$('#offline-state').textContent='利用できません';}
-$('#offline-download').onclick=async()=>{const button=$('#offline-download');if(!('caches'in window)||!serviceWorkerReady){return;}button.disabled=true;let count=0;try{await serviceWorkerReady;const cache=await caches.open('gifu-offline-v4');for(const asset of offlineAssets){const url=new URL(asset,location.href).href;if(!(await cache.match(url))){const response=await fetch(url,{cache:'reload'});if(!response.ok)throw new Error('download');await cache.put(url,response);}$('#offline-state').textContent=`${++count} / ${offlineAssets.length}`;}$('#offline-state').textContent='保存済み';toast('写真と案内をオフライン保存しました。');}catch{await updateOfflineState();}finally{button.disabled=false;}};
+$('#offline-download').onclick=async()=>{const button=$('#offline-download');if(!('caches'in window)||!serviceWorkerReady){return;}button.disabled=true;let count=0;try{await serviceWorkerReady;const cache=await caches.open('gifu-offline-v5');for(const asset of offlineAssets){const url=new URL(asset,location.href).href;if(!(await cache.match(url))){const response=await fetch(url,{cache:'reload'});if(!response.ok)throw new Error('download');await cache.put(url,response);}$('#offline-state').textContent=`${++count} / ${offlineAssets.length}`;}$('#offline-state').textContent='保存済み';toast('写真と案内をオフライン保存しました。');}catch{await updateOfflineState();}finally{button.disabled=false;}};
