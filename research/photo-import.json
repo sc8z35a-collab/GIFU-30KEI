@@ -1,0 +1,222 @@
+{
+  "repository_url": "https://github.com/sc8z35a-collab/GIFU-30KEI",
+  "quality": 86,
+  "photos": [
+    {
+      "path": "dist/assets/kuronota-detail-01.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/01/Kuronotahigashi_Wetland_%282026-03-28%29.jpg/1280px-Kuronotahigashi_Wetland_%282026-03-28%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "af2c8138a19353af56e705331f8a71db13ed154a5cc488a46ec1e968a4214fab",
+      "blob_sha": "465c9bd28af24640a65445592dafd4a4f2e17585"
+    },
+    {
+      "path": "dist/assets/kuronota-detail-02.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/4e/Kuronotahigashi_Wetland_%282024-10-10%29.jpg/1280px-Kuronotahigashi_Wetland_%282024-10-10%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "4b33a45048c85498564140b26bd9c1a19dc6ae482b636474d2a27db0240456a3",
+      "blob_sha": "e1efd4df24a1d7c69b3c3466a01e56b67189d264"
+    },
+    {
+      "path": "dist/assets/nenoue-detail-01.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/d/d6/Lake_Nenoue_and_Wetland.jpg/1280px-Lake_Nenoue_and_Wetland.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "7fb146b69abae7f4f05b09f193a3a2ec7aa5bdc179d7584db779fa480de2a3e5",
+      "blob_sha": "3eb0eaa76ba0d73f72c584f3c7ceced23aa80667"
+    },
+    {
+      "path": "dist/assets/nenoue-detail-02.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f4/Nenoue_Wetland_and_Boardwalks.jpg/1280px-Nenoue_Wetland_and_Boardwalks.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "187a4511089c9e6ab6501439db63d11f70442c8a663479ee5770c406664a0894",
+      "blob_sha": "3b20c08796b39648eac19443626140021e47d7d4"
+    },
+    {
+      "path": "dist/assets/amou-detail-01.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/5/50/Amo_Wetland_2016-05-28.jpg/1280px-Amo_Wetland_2016-05-28.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "c435b8a947ef6dccc0796c94a17d628f118dc3917964b4c33aa9adff1201a551",
+      "blob_sha": "053971fbb6102734964e94820e0940027ddfdda9"
+    },
+    {
+      "path": "dist/assets/amou-detail-02.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f3/Amo_Wetland_2014-06-03.jpg/1280px-Amo_Wetland_2014-06-03.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "7579cb9301213839d387ccd1892b86ba2e89eeb8c16a3747bae808165bdde3fe",
+      "blob_sha": "1c8abee399379a3a7cdc256c75be7741a51b13de"
+    },
+    {
+      "path": "dist/assets/utsue-detail-01.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/e/ef/Utsueshijuhachitak20110621%E9%81%8A%E6%AD%A9%E9%81%93.jpg/1280px-Utsueshijuhachitak20110621%E9%81%8A%E6%AD%A9%E9%81%93.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "fa7340b886f7b2af1f9cb6cbb392246934de6202495fa3bd0a5ebbbd8c887037",
+      "blob_sha": "0b5f14d9377204ed23811ce2d603cb4b3b2c7d28"
+    },
+    {
+      "path": "dist/assets/utsue-detail-02.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/11/Utsueshijuhachitaki20121107%E2%91%A1.jpg/1280px-Utsueshijuhachitaki20121107%E2%91%A1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "da56d3656eb6a6da040f407ff96e2f1286de103d7538a9e210ad041172efb655",
+      "blob_sha": "5467c0312f50355e3a0269502c26caa368a4e06b"
+    },
+    {
+      "path": "dist/assets/utsue-detail-03.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/f/f7/Utsueshijuhachitaki20110621jodantaki%E4%B8%8A%E6%AE%B5%E6%BB%9D.jpg/1280px-Utsueshijuhachitaki20110621jodantaki%E4%B8%8A%E6%AE%B5%E6%BB%9D.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "726df586622c5b75446fda225a6c31bbdb8738683a24213f2596b764866fd9a6",
+      "blob_sha": "b4e13ed3d3747c30bcf1703cde6d8ae2fa75b47e"
+    },
+    {
+      "path": "dist/assets/tokuyama-detail-02.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/4/47/Tokuyama_Dam_lake_around_R417_2.jpg/960px-Tokuyama_Dam_lake_around_R417_2.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "e1237cedf21537cebf9f965e58014000893a43a02b8a3839c96082ee7706140f",
+      "blob_sha": "aba513ca2c0c7eceaa09e010d3a7a653beda1886"
+    },
+    {
+      "path": "dist/assets/gandate-detail-01.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/96/Mitsu_Falls_step1.jpg/1280px-Mitsu_Falls_step1.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "8791408249b8425298109f9e972a6f68dcdb795a8f9ac3a5c1803d005e5ef2d7",
+      "blob_sha": "b98106e61975bc606cb01e1b038513f61ed73188"
+    },
+    {
+      "path": "dist/assets/gandate-detail-02.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/05/Mitsu_Falls_s3.jpg/1280px-Mitsu_Falls_s3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "dda2639c1d2ec9a7030bb60b03260fc25c0c1c2f25f664f54452e7ff71657553",
+      "blob_sha": "f3c32bc718a2ddadba875ee668f5d9498c314dfa"
+    },
+    {
+      "path": "dist/assets/hakusui-detail-01.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/17/Hakusui_lake_from_Mount_Okura2008-07-01.jpg/1280px-Hakusui_lake_from_Mount_Okura2008-07-01.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "b7748912237badabee6e0ff02ca65f4ecdf50ddc139bc6728fa76cd7d9358bc1",
+      "blob_sha": "d9608c50395a7d37a0436286acd1a053e5fb9e6f"
+    },
+    {
+      "path": "dist/assets/hakusui-detail-02.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/9/90/Hakusui_lake_from_Mount_Bessan_2004-06-13.jpg/1280px-Hakusui_lake_from_Mount_Bessan_2004-06-13.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "fc81fa524c55a363e103447442f0c61b1e1b378b080599edcae9e80727f547b5",
+      "blob_sha": "91cbe6529f1735ce788eeb695227acbb5fb18f9e"
+    },
+    {
+      "path": "dist/assets/menodaki-detail-02.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/71/Meoto_waterfall_%28Takayama%29_s3.jpg/1280px-Meoto_waterfall_%28Takayama%29_s3.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "80136cdf3b79d52032f679d2aae72a797916eb8d2b2b6fbcd182603886794b25",
+      "blob_sha": "88c1ae0387ae77db3174ba69e13833518508f0f9"
+    },
+    {
+      "path": "dist/assets/miboro-detail-01.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/a/ac/Miboro_Dam_Lake_and_Hida_Mountains.jpg/1280px-Miboro_Dam_Lake_and_Hida_Mountains.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "ebc0c920eebf994a820b8dac7bff165f5333b5fcc2d02821ef86cadc45bf692b",
+      "blob_sha": "e6ccb5b2df933105d36e2454fb20897f08213778"
+    },
+    {
+      "path": "dist/assets/miboro-detail-02.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/b0/Lake_Miboro01s3s3900.jpg/1280px-Lake_Miboro01s3s3900.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "54b4915b724003658091f7843d6d2f5cdb25f222a9beba6f4953a93ff68ebf6f",
+      "blob_sha": "e6e71f656d5af9960a2d4acfe36a3b35a31961f7"
+    },
+    {
+      "path": "dist/assets/goho-detail-01.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/3/38/Ichino_Fall_%28Goho_Falls%29.jpg/1280px-Ichino_Fall_%28Goho_Falls%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "32a4ab05ffcb11050c7a51334d5c4f5ab34bfddbf675cf3f6a8e191d602743e4",
+      "blob_sha": "f27b7e004df579eead457fe1164ac02ff16fe7d0"
+    },
+    {
+      "path": "dist/assets/goho-detail-02.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/7/7c/Enmeino_Fall_%28Goho_Falls%29.jpg/1280px-Enmeino_Fall_%28Goho_Falls%29.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "3a848e22fc7693dfd06071aee9c79a503eb78cf9a1d3bcc671926e8a005e8ae4",
+      "blob_sha": "60168e742a92134fb5de4747da54c700b6ef92e8"
+    },
+    {
+      "path": "dist/assets/yokotani-detail-01.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/06/Yokotani_Valley_Futami_Waterfall.JPG/1280px-Yokotani_Valley_Futami_Waterfall.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "988cae31f294a0678efdcecc931f4c91b40a1bba8936fa899726dabf3566dee4",
+      "blob_sha": "f4eef0264000c7325b3ea2b510b427e1a693206c"
+    },
+    {
+      "path": "dist/assets/yokotani-detail-02.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/2e/Yokotani_Valley_Sira_Waterfall.JPG/1280px-Yokotani_Valley_Sira_Waterfall.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "2a4de56c5f64b8f136d05394af12f8d112136a57f791a3a3e3c0fd6e0e11b48f",
+      "blob_sha": "c8902498f8d19a7a7c959f14d02ab00ad5cc8e6c"
+    },
+    {
+      "path": "dist/assets/kurai-detail-01.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/b/bf/Hida_Highland_from_Mount_Kurai.jpg/1280px-Hida_Highland_from_Mount_Kurai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "c7967c1111dcc16af1b3d6a4be45b32eedc35ea047c71601494b7f4582472310",
+      "blob_sha": "8aadcc780cdcb9c61a3a338e0ad6e925d7364787"
+    },
+    {
+      "path": "dist/assets/kurai-detail-02.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/27/Mount_Kaore_from_Mount_Kurai.jpg/1280px-Mount_Kaore_from_Mount_Kurai.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "abf33f4a4f26ac649ba0b4df8d092f481f8a189977601d1c1e8a5ac30ced97cb",
+      "blob_sha": "289f97c7141f277cc424d7e2e298f83dfec5eb39"
+    },
+    {
+      "path": "dist/assets/amida-detail-01.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/2/25/Amidagataki_upper.jpg/1280px-Amidagataki_upper.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "be12700d3a183b925ac69c192b55369efa0e2c8a0104189daf8ca1a41b3b7034",
+      "blob_sha": "facb36c664bf641cd3631e6cc02914bbae5a553e"
+    },
+    {
+      "path": "dist/assets/amida-detail-02.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/0/0e/Jpn_gifu_gujyou_amidagataki_20090527.jpg/1280px-Jpn_gifu_gujyou_amidagataki_20090527.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "f5264c1b12158490f54a055bfa17728f0f1f28eb01945ae80a197d766eedef19",
+      "blob_sha": "8d49219a317acc7edf4f7c02a8e259ecc200d543"
+    },
+    {
+      "path": "dist/assets/nishiure-detail-01.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/6/63/%E9%A3%9B%E9%A8%A8%E3%81%9B%E3%81%9B%E3%82%89%E3%81%8E%E8%A1%97%E9%81%93_%E8%A5%BF%E3%82%A6%E3%83%AC%E5%B3%A0.JPG/1280px-%E9%A3%9B%E9%A8%A8%E3%81%9B%E3%81%9B%E3%82%89%E3%81%8E%E8%A1%97%E9%81%93_%E8%A5%BF%E3%82%A6%E3%83%AC%E5%B3%A0.JPG?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "71fc44f94ec60166a926933943ac5296ae8fbd639d9718867317807d481b2a1e",
+      "blob_sha": "9306828b33c14cb52b124c054946398ca0fbe6e3"
+    },
+    {
+      "path": "dist/assets/hisui-detail-01.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/1/19/260125_Hisuikyo_Shirakawa_Gifu_pref_Japan01s5.jpg/1280px-260125_Hisuikyo_Shirakawa_Gifu_pref_Japan01s5.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "6d4d59214b49f64aba6eed6e3268c1ab08d12c3d5421e037fd5267e1cef4c35b",
+      "blob_sha": "03c009d37908ed78550be2c4183ebf8bc1835201"
+    },
+    {
+      "path": "dist/assets/juro-detail-01.webp",
+      "url": "https://thumb.wikimedia.org/wikipedia/commons/thumb/8/88/Juro_Falls.jpg/1280px-Juro_Falls.jpg?utm_source=commons.wikimedia.org&utm_campaign=imageinfo&utm_content=thumbnail",
+      "source_sha256": "9dd5c96968d7c090c248967aacfdf380eb8461e4ad1b5a07c4a267caf0412c3d",
+      "blob_sha": "c2ee45c49f48b734c6ccaf66a4a9f7efc598dbc5"
+    },
+    {
+      "path": "dist/assets/amou-city-detail-01.webp",
+      "url": "https://storage.googleapis.com/storage.openphoto.jp/photos/55/eyecatch/ljMsr1j0lxyzu86VjCX1ZRPkCfsTw7rHx7FoFXon.jpg",
+      "source_sha256": "5cbb5651aa479309c3e351a9f5b69b88c5cddef4248a3d167c91e74c718f3a05",
+      "blob_sha": "c6b64109cd65f1df629527f25bc7aa21b2162519"
+    },
+    {
+      "path": "dist/assets/amou-city-detail-02.webp",
+      "url": "https://storage.googleapis.com/storage.openphoto.jp/photos/55/eyecatch/bfOhmbr5unmj7dFZ766cuOVubt09dpkg7wpjE8AI.jpg",
+      "source_sha256": "f820113d0540a2a1f10ddb5e61fae9f9bfc635f09883ac76d7beaf48e61d6651",
+      "blob_sha": "6b9504f4cc079c70c17325fd54ea66e3affeddf5"
+    },
+    {
+      "path": "dist/assets/amou-city-detail-03.webp",
+      "url": "https://storage.googleapis.com/storage.openphoto.jp/photos/55/eyecatch/IUyzUbDUwcezyhL2ubD1cx6O3mGKUmvnNZafEvL9.jpg",
+      "source_sha256": "4e3e8735d0483792fa39b9739b2d5ff1ed6b5b99d49ec9f2328740c4bf302e30",
+      "blob_sha": "5ca6e530ab8fe6f04f26bf12aac5178282e6efb5"
+    },
+    {
+      "path": "dist/assets/ikegahara-city-detail-01.webp",
+      "url": "https://storage.googleapis.com/storage.openphoto.jp/photos/55/eyecatch/IqkdN7eB0xUEjHz68NCKg140e4WVfOy0pSlPpmcu.jpg",
+      "source_sha256": "3fc6eec9e2a2becb78993c7dbacfb99181ba886c1f21da1afc6cf388f4f37422",
+      "blob_sha": "66a64eae809b26799e3b3884b05d8ad139e79f48"
+    },
+    {
+      "path": "dist/assets/ikegahara-city-detail-02.webp",
+      "url": "https://storage.googleapis.com/storage.openphoto.jp/photos/55/eyecatch/hPiqy2FWeyABfYVINRe5tI5GmOw4Fi3c2ERr7lKb.jpg",
+      "source_sha256": "f2ae100c2b6cc59e5f320d212b21a7f69f91d45ca333b4495152dee5cbbf1148",
+      "blob_sha": "ab5dc6f550c5df69b42ecf1ce729ce81ee30aa5b"
+    },
+    {
+      "path": "dist/assets/ikegahara-city-detail-03.webp",
+      "url": "https://storage.googleapis.com/storage.openphoto.jp/photos/55/eyecatch/ubujGulOuHIlzXHmFzPMofN4bd5eaPXMdZfNj7Xx.jpg",
+      "source_sha256": "ebe498e11dc4fe46825b98bb9880ee99a28fe8b211bb39ecdb32a486473a95bf",
+      "blob_sha": "86b61d56705e59baee571570c4ebc69413d8be82"
+    },
+    {
+      "path": "dist/assets/enbara-find47-detail-01.webp",
+      "url": "https://find47.jp/uploads/image_file/content/000/001/535/m.jpg",
+      "source_sha256": "937730aedb1566ca749095aa53305d66dfb2b7aa7d58828c48a22ff8c1a9c9d9",
+      "blob_sha": "ece6ff6527ca27f903e22a2e4b3b89dbb8b40bc3"
+    },
+    {
+      "path": "dist/assets/enbara-find47-detail-02.webp",
+      "url": "https://find47.jp/uploads/image_file/content/000/004/402/m.jpg",
+      "source_sha256": "82a2b3de4f433a181bf6508012a4e6f8683a49d4cee8b37b00a42c45bcd3de41",
+      "blob_sha": "8760f79623a1dce3a888e4b3d45faa2bd55deac3"
+    }
+  ]
+}

@@ -1,5 +1,5 @@
-const CACHE='gifu-offline-v4';
-const SHELL=['./','./index.html','./style.css','./experience.css','./gallery.css','./cinema.css','./kinetic.js','./motion.js','./photo-loader.js','./random.js','./scrub.js','./assets/contours.svg','./assets/kabusugi.webp','./app.js','./data.js','./photos.js','./budgets.js','./manifest.webmanifest','./assets/icon-192.png','./assets/icon-512.png','./assets/NotoSerifJP.woff2','./assets/NotoSansJP.woff2','./assets/NotoSerifJP-OFL.txt','./assets/NotoSansJP-OFL.txt'];
+const CACHE='gifu-offline-v5';
+const SHELL=['./','./index.html','./style.css','./experience.css','./gallery.css','./cinema.css','./photo-story.css','./photo-story.js','./story-photos.js','./kinetic.js','./motion.js','./photo-loader.js','./random.js','./scrub.js','./assets/contours.svg','./assets/kabusugi.webp','./app.js','./data.js','./photos.js','./budgets.js','./manifest.webmanifest','./assets/icon-192.png','./assets/icon-512.png','./assets/NotoSerifJP.woff2','./assets/NotoSansJP.woff2','./assets/NotoSerifJP-OFL.txt','./assets/NotoSansJP-OFL.txt'];
 self.addEventListener('install',event=>event.waitUntil(caches.open(CACHE).then(cache=>cache.addAll(SHELL)).then(()=>self.skipWaiting())));
 self.addEventListener('activate',event=>event.waitUntil((async()=>{
  const cache=await caches.open(CACHE),keys=(await caches.keys()).filter(k=>k.startsWith('gifu-offline-')&&k!==CACHE);

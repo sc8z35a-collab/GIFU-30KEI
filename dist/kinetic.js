@@ -36,6 +36,14 @@ export function createInterfaceMotion({reduced}){
   rise(element.querySelector('.card-number'),delay+155,16);
   rise(element.querySelector('.card-info'),delay+210,18);
  }
+ function story(figure,index=0){
+  const delay=Math.min(index,3)*80,frame=figure.querySelector('.story-frame'),image=figure.querySelector('img');
+  const radius=frame?getComputedStyle(frame).borderRadius||'12px':'12px';
+  rise(figure,delay,38);
+  play(frame,[{clipPath:'inset(7% 0 74% 0 round '+radius+')'},{clipPath:'inset(0% 0 0% 0 round '+radius+')'}],{duration:1280,delay:delay+40});
+  play(image,[{transform:'translate3d(0,3%,0) scale(1.14)',opacity:.7},{transform:'translate3d(0,0,0) scale(1)',opacity:1}],{duration:1450,delay:delay+40});
+  rise(figure.querySelector('.story-caption'),delay+280,15);rise(figure.querySelector('.story-credit'),delay+350,10);
+ }
  function view(element,direction=1){
   play(element,[{opacity:.25,transform:'translate3d('+direction*38+'px,26px,0) scale(.97)'},{opacity:1,transform:'translate3d(0,0,0) scale(1)'}],{duration:820});
   rise(element.querySelector('.view-header h1'),70,24);
@@ -49,8 +57,8 @@ export function createInterfaceMotion({reduced}){
   play(dialog.querySelector('.overview-photo img'),[{transform:'scale(1.29) translate3d(0,-2%,0)',opacity:.6},{transform:'scale(1.16) translate3d(0,0,0)',opacity:1}],{duration:1350,delay:100});
   sheetObservers.get(dialog)?.disconnect();
   if(!reduced()&&'IntersectionObserver'in window){
-   const observer=new IntersectionObserver(entries=>{let index=0;for(const entry of entries)if(entry.isIntersecting){rise(entry.target,index++*70,30);observer.unobserve(entry.target);}}, {root:dialog,threshold:.06});
-   dialog.querySelectorAll('.detail-section, .source-item').forEach(element=>observer.observe(element));
+   const observer=new IntersectionObserver(entries=>{let index=0;for(const entry of entries)if(entry.isIntersecting){if(entry.target.classList.contains('story-figure'))story(entry.target,index++);else rise(entry.target,index++*70,30);observer.unobserve(entry.target);}}, {root:dialog,threshold:.06});
+   dialog.querySelectorAll('.story-figure, .detail-section, .source-item').forEach(element=>observer.observe(element));
    sheetObservers.set(dialog,observer);
    dialog.addEventListener('close',()=>observer.disconnect(),{once:true});
   }
