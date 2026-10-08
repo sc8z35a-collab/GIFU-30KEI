@@ -528,7 +528,7 @@
       "key": "goho-detail-02",
       "spot_id": "goho",
       "title": "Enmeino Fall (Goho Falls).jpg",
-      "caption": "五宝滝の延命滝と木々に囲まれた岩壁",
+      "caption": "五宝滝の円明の滝と木々に囲まれた岩壁",
       "author": "Alpsdake",
       "license": "CC BY-SA 4.0",
       "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
@@ -551,7 +551,12 @@
         "usage_terms": "Creative Commons Attribution-Share Alike 4.0",
         "copyrighted": "True"
       },
-      "webp_sha256": "895d6281f27b16b0d7ebb2bdff532b50bd7ad9cefd136c99934631564582d8cc"
+      "webp_sha256": "895d6281f27b16b0d7ebb2bdff532b50bd7ad9cefd136c99934631564582d8cc",
+      "caption_verification": {
+        "url": "https://www.kankou-gifu.jp/spot/detail_4224.html",
+        "publisher": "岐阜県観光連盟",
+        "confirmed_name": "円明の滝"
+      }
     },
     {
       "key": "yokotani-detail-01",

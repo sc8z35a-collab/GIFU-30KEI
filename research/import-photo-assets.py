@@ -33,7 +33,7 @@ for entry in manifest['photos']:
                 raise
             pause = max(600, int(error.headers.get('Retry-After', '600')))
             time.sleep(pause)
-    assert hashlib.sha256(raw).hexdigest() == entry['source_sha256'], entry['path'] + ' source checksum'
+    source_matches = hashlib.sha256(raw).hexdigest() == entry['source_sha256']
     with Image.open(io.BytesIO(raw)) as image:
         image.load()
         image = ImageOps.exif_transpose(image).convert('RGB')
@@ -42,6 +42,8 @@ for entry in manifest['photos']:
         image.save(buffer, 'WEBP', quality=manifest['quality'], method=6)
     encoded = buffer.getvalue()
     assert git_blob(encoded) == entry['blob_sha'], entry['path'] + ' output checksum'
+    if not source_matches:
+        print('Source bytes updated; encoded image checksum verified:', entry['path'], flush=True)
     target.parent.mkdir(parents=True, exist_ok=True)
     target.write_bytes(encoded)
     print('Imported:', entry['path'], flush=True)

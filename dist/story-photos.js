@@ -325,7 +325,7 @@ export const STORY_PHOTOS = {
   },
   "goho-detail-02": {
     "title": "Enmeino Fall (Goho Falls).jpg",
-    "caption": "五宝滝の延命滝と木々に囲まれた岩壁",
+    "caption": "五宝滝の円明の滝と木々に囲まれた岩壁",
     "author": "Alpsdake",
     "license": "CC BY-SA 4.0",
     "license_url": "https://creativecommons.org/licenses/by-sa/4.0",
